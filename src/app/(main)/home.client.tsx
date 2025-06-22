@@ -1,12 +1,12 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { categories } from '@/data/categories';
-import { ArrowRight, BookOpen, Map, BarChartBig, Lightbulb, ClipboardCheck, Star, CheckCircle, Rss } from 'lucide-react';
+import { ArrowRight, BookOpen, Map as MapIcon, BarChartBig, Lightbulb, ClipboardCheck, Star, CheckCircle, Rss } from 'lucide-react';
 import React from 'react';
 import { cn, slugify } from '@/lib/utils';
 import { getAllQuestions } from '@/data/questions';
@@ -65,6 +65,33 @@ export default function HomeClient() {
   }, []);
 
   const allQuestions = getAllQuestions();
+
+  const popularTopics = useMemo(() => {
+    const keywordMap = new Map<string, { question: (FAQQuestion & { slug: string; }) }>();
+    
+    // Iterate through all questions to find the first associated question for each unique keyword
+    for (const question of allQuestions) {
+        for (const keyword of question.keywords) {
+            const lowerKeyword = keyword.toLowerCase();
+            if (!keywordMap.has(lowerKeyword)) {
+                keywordMap.set(lowerKeyword, { question });
+            }
+        }
+    }
+    
+    // Create the final list of topics from the map
+    const topics = Array.from(keywordMap.entries()).map(([key, value]) => {
+        // Find the original cased keyword to display
+        const originalKeyword = value.question.keywords.find(k => k.toLowerCase() === key) || key;
+        return {
+            keyword: originalKeyword,
+            question: value.question
+        };
+    });
+
+    // Return up to 30 topics
+    return topics.slice(0, 30);
+  }, [allQuestions]);
 
   return (
     <div className="bg-background">
@@ -155,7 +182,7 @@ export default function HomeClient() {
               actionText="Read the Guide"
             />
             <CtaCard
-              icon={Map}
+              icon={MapIcon}
               title="Regional Guide"
               description="Licensing by state"
               href="/regional-guide"
@@ -179,8 +206,28 @@ export default function HomeClient() {
         </div>
       </section>
 
+      {/* Popular Topics Section */}
+      <section className="py-16 md:py-20 bg-slate-50 dark:bg-card border-t">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex justify-center mb-12">
+          <h2 className="text-3xl font-bold text-foreground bg-amber-200/80 px-6 py-2 rounded-md rotate-1 shadow-md dark:text-gray-800">
+              💡 Popular Topics
+          </h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+          {popularTopics.map(({ keyword, question }) => (
+              <Button asChild key={`${keyword}-${question.id}`} variant="outline" className="rounded-full transition-transform hover:scale-105">
+              <Link href={`/questions/${slugify(question.category)}/${question.slug}`}>
+                  {keyword}
+              </Link>
+              </Button>
+          ))}
+          </div>
+        </div>
+      </section>
+
       {/* RTO Sale Offer Section */}
-      <section id="sale-offer" className="py-16 md:py-20 text-center bg-slate-50 dark:bg-card border-t">
+      <section id="sale-offer" className="py-16 md:py-20 text-center bg-background border-t">
         <div className="container mx-auto px-4 md:px-6 flex justify-center">
           <Card className="relative group w-full max-w-lg bg-gradient-to-br from-primary to-[hsl(var(--deep-navy))] text-white overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 -rotate-2 hover:rotate-0">
             <div className="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 rounded-full bg-white/10 group-hover:scale-125 transition-transform duration-500"></div>

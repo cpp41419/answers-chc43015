@@ -1,3 +1,4 @@
+
 'use client';
 
 import type { ReactNode } from 'react';
@@ -12,12 +13,6 @@ interface MenuItem {
   icon?: React.ComponentType<{ className?: string }>;
   description?: string;
   highlight?: boolean;
-  submenu?: SubMenuItem[];
-}
-
-interface SubMenuItem {
-  name: string;
-  href: string;
 }
 
 const menuItems: MenuItem[] = [
@@ -25,47 +20,13 @@ const menuItems: MenuItem[] = [
     name: 'Home',
     href: '/',
     icon: Home,
+    description: "Return to the homepage"
   },
   {
-    name: 'Provider Quiz',
-    href: '/quiz',
-    icon: ClipboardCheck,
-    description: 'Find your perfect course',
-    highlight: true,
-  },
-  {
-    name: 'Comprehensive Guide',
-    href: '/guide',
+    name: 'All Questions',
+    href: '/questions',
     icon: BookText,
-    description: 'The complete course overview'
-  },
-  {
-    name: 'Regional Guide',
-    href: '/regional-guide',
-    icon: Map,
-    description: 'Licensing by state',
-    submenu: [
-      { name: 'NSW', href: '/regional-guide#nsw' },
-      { name: 'VIC', href: '/regional-guide#vic' },
-      { name: 'QLD', href: '/regional-guide#qld' },
-      { name: 'WA', href: '/regional-guide#wa' },
-      { name: 'SA', href: '/regional-guide#sa' },
-      { name: 'TAS', href: '/regional-guide#tas' },
-      { name: 'ACT', href: '/regional-guide#act' },
-      { name: 'NT', href: '/regional-guide#nt' },
-    ],
-  },
-  {
-    name: 'Popular Blogs',
-    href: '/popular-blogs',
-    icon: Rss,
-    description: 'Latest articles & insights',
-  },
-  {
-    name: 'Data Insights',
-    href: '/data-insights',
-    icon: BarChartBig,
-    description: 'Expert analysis',
+    description: 'Browse the complete Q&A index'
   },
   {
     name: 'Submit a Question',
@@ -82,15 +43,7 @@ interface MobileMenuProps {
 }
 
 export default function MobileMenu({ isOpen, onClose, onOpenSearch }: MobileMenuProps) {
-  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
   const pathname = usePathname();
-
-  const toggleExpanded = (itemName: string) => {
-    setExpandedItems(prev => ({
-      ...prev,
-      [itemName]: !prev[itemName],
-    }));
-  };
 
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/';
@@ -149,72 +102,32 @@ export default function MobileMenu({ isOpen, onClose, onOpenSearch }: MobileMenu
           <nav className="space-y-1.5">
             {menuItems.map((item) => (
               <div key={item.name}>
-                {/* Main Item */}
-                <div className="flex items-center">
-                  <Link
-                    href={item.href}
-                    onClick={item.submenu ? (e) => { e.preventDefault(); toggleExpanded(item.name); } : onClose}
-                    target={item.href.startsWith('http') ? '_blank' : undefined}
-                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className={`flex-1 flex items-center p-3 rounded-lg transition-colors text-sm
-                      ${
-                        item.highlight
-                          ? 'bg-primary text-primary-foreground hover:bg-primary/90'
-                          : isActive(item.href)
-                          ? 'bg-primary/10 text-primary font-semibold'
-                          : 'text-foreground hover:bg-muted'
-                      }`}
-                  >
-                    {item.icon && <item.icon className={`w-5 h-5 mr-3 shrink-0 ${isActive(item.href) && !item.highlight ? 'text-primary' : item.highlight ? 'text-primary-foreground' : 'text-muted-foreground'}`} />}
-                    <div className="flex-1">
-                      <div className={`font-medium ${item.highlight ? '' : isActive(item.href) ? '' : ''}`}>{item.name}</div>
-                      {item.description && (
-                        <div className={`text-xs ${
-                          item.highlight ? 'text-primary-foreground/80' : isActive(item.href) ? 'text-primary/80' : 'text-muted-foreground'
-                        }`}>
-                          {item.description}
-                        </div>
-                      )}
-                    </div>
-                  </Link>
-
-                  {/* Submenu Toggle */}
-                  {item.submenu && (
-                    <button
-                      onClick={() => toggleExpanded(item.name)}
-                      className="p-3 text-muted-foreground hover:text-foreground transition-colors -ml-10"
-                      aria-expanded={expandedItems[item.name] || false}
-                      aria-controls={`submenu-${item.name}`}
-                    >
-                      {expandedItems[item.name] ? (
-                        <ChevronDown className="w-5 h-5" />
-                      ) : (
-                        <ChevronRight className="w-5 h-5" />
-                      )}
-                    </button>
-                  )}
-                </div>
-
-                {/* Submenu */}
-                {item.submenu && expandedItems[item.name] && (
-                  <div id={`submenu-${item.name}`} className="ml-5 mt-1 pl-3 border-l border-border space-y-1">
-                    <Link href={item.href} onClick={onClose} className="block p-2 rounded-md text-sm font-medium text-foreground/80 hover:bg-muted hover:text-foreground">All {item.name}</Link>
-                    {item.submenu.map((subItem) => (
-                      <Link
-                        key={subItem.name}
-                        href={subItem.href}
-                        onClick={onClose}
-                        className={`block p-2 rounded-md text-sm transition-colors ${
-                          pathname.includes(subItem.href)
-                            ? 'bg-primary/10 text-primary font-medium'
-                            : 'text-foreground/80 hover:bg-muted hover:text-foreground'
-                        }`}
-                      >
-                        {subItem.name}
-                      </Link>
-                    ))}
+                <Link
+                  href={item.href}
+                  onClick={onClose}
+                  target={item.href.startsWith('http') ? '_blank' : undefined}
+                  rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className={`flex-1 flex items-center p-3 rounded-lg transition-colors text-sm
+                    ${
+                      item.highlight
+                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                        : isActive(item.href)
+                        ? 'bg-primary/10 text-primary font-semibold'
+                        : 'text-foreground hover:bg-muted'
+                    }`}
+                >
+                  {item.icon && <item.icon className={`w-5 h-5 mr-3 shrink-0 ${isActive(item.href) && !item.highlight ? 'text-primary' : item.highlight ? 'text-primary-foreground' : 'text-muted-foreground'}`} />}
+                  <div className="flex-1">
+                    <div className={`font-medium ${item.highlight ? '' : isActive(item.href) ? '' : ''}`}>{item.name}</div>
+                    {item.description && (
+                      <div className={`text-xs ${
+                        item.highlight ? 'text-primary-foreground/80' : isActive(item.href) ? 'text-primary/80' : 'text-muted-foreground'
+                      }`}>
+                        {item.description}
+                      </div>
+                    )}
                   </div>
-                )}
+                </Link>
               </div>
             ))}
           </nav>

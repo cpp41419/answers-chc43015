@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -12,11 +13,7 @@ interface HeaderProps {
 
 export default function Header({ onOpenMobileMenu, onOpenSearch }: HeaderProps) {
   const navLinks = [
-    { name: 'Quiz', href: '/quiz' },
-    { name: 'Guide', href: '/guide' },
-    { name: 'Regions', href: '/regional-guide' },
-    { name: 'Blogs', href: '/popular-blogs' },
-    { name: 'Insights', href: '/data-insights' },
+    { name: 'All Questions', href: '/questions' },
   ];
 
   return (
