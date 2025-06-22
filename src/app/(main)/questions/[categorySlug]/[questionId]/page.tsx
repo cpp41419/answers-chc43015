@@ -90,6 +90,24 @@ export default function QuestionPage({ params }: QuestionPageProps) {
         </ul>
       </div> */}
     </div>
+
+    {/* Related Questions Section */}
+    <section className="container mx-auto py-8">
+      <h2 className="text-2xl font-bold mb-4">Related Questions</h2>
+      {/* Container for related questions tiles - using a simple flex layout for now */}
+      <div className="flex flex-wrap -mx-2">
+        {/* TODO: Add logic here to fetch and map related questions */}
+        {/*
+          Example of a related question tile structure:
+          <Link href={`/questions/${relatedCategory.slug}/${relatedQuestion.id}`} className="block w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
+            <div className="border p-4 rounded-md hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-semibold mb-2">{relatedQuestion.title}</h3>
+              <p className="text-sm text-gray-600 line-clamp-2">{relatedQuestion.answer}</p> // Optional: Show snippet of answer
+            </div>
+          </Link>
+        */}
+      </div>
+    </section>
   );
 }
 
