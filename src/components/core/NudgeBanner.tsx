@@ -100,8 +100,8 @@ export function NudgeBanner() {
                 Ready to take the next step in your real estate journey?
               </p>
               <Button asChild size="sm" className="w-full">
-                <Link href="https://cpp41419.com.au/contact" target="_blank" rel="noopener noreferrer">
-                  Contact Us
+                <Link href="/submit-question">
+                  Submit a Question
                 </Link>
               </Button>
             </div>

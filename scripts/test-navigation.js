@@ -18,7 +18,8 @@ async function testNavigation() {
     '/regional-guide',
     '/popular-blogs',
     '/data-insights',
-    '/submit-question'
+    '/submit-question',
+    '/questions'
   ];
   
   for (const link of navLinks) {
@@ -31,6 +32,20 @@ async function testNavigation() {
     } catch (error) {
       console.error(`❌ Failed to navigate to ${link}: ${error.message}`);
     }
+  }
+
+  // Test FAB button
+  try {
+    console.log('Testing FAB button navigation...');
+    await page.goto(APP_URL, { waitUntil: 'networkidle0' });
+    const fabSelector = 'a[aria-label="Start Assessment"]';
+    await page.waitForSelector(fabSelector, { visible: true });
+    await page.click(fabSelector);
+    await page.waitForNavigation({ waitUntil: 'networkidle0' });
+    const status = page.url().endsWith('/quiz') ? '✅' : '❌';
+    console.log(`${status} FAB button correctly navigates to /quiz`);
+  } catch (error) {
+    console.error(`❌ FAB button test failed: ${error.message}`);
   }
   
   // Test mobile navigation
