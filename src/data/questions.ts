@@ -47,7 +47,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What's the difference between CPP40307 and CPP41419?",
-    answer: "```mermaid\ngraph LR\n    A[CPP40307<br/>Expired 2019] --> B[CPP41419<br/>Current Standard]\n    \n    A --> C[Basic Skills<br/>Limited Digital]\n    B --> D[Enhanced Ethics<br/>Digital Marketing<br/>Modern Compliance]\n    \n    style A fill:#ffebee\n    style B fill:#e8f5e8\n```\nCPP40307 expired in 2019. CPP41419 includes enhanced digital skills, stronger ethical components, and modern compliance requirements.^[3]",
+    answer: "CPP41419 is the current standard, replacing the expired CPP40307 in 2019. The newer qualification enhances the course with a stronger focus on ethical practice, digital marketing skills, and modern compliance knowledge, moving beyond the basic skills and limited digital focus of its predecessor.^[3]",
     category: "Course Basics & Enrollment",
     keywords: [],
     provider_specific: false,
@@ -73,7 +73,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "How long does CPP41419 take to complete?",
-    answer: "> [!example] Duration by Study Mode\n> ```\n> Study Mode Comparison:\n> ┌─ Self-Paced Online     → 3-6 months\n> ├─ Structured Online    → 4-8 months\n> ├─ Blended Learning     → 5-9 months\n> └─ Classroom Based      → 6-12 months\n> ```\nDuration varies by provider and personal study pace. Most students complete within 4-6 months.^[5]",
+    answer: "The time to complete CPP41419 varies by study mode and provider. Typically:\n- Self-Paced Online: 3-6 months\n- Structured Online: 4-8 months\n- Blended Learning: 5-9 months\n- Classroom Based: 6-12 months\nOn average, most students complete the course within 4 to 6 months.^[5]",
     category: "Study Options & Duration",
     keywords: [],
     provider_specific: false,
@@ -97,7 +97,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What's the difference between online, blended, and classroom study?",
-    answer: "> [!tip] Study Mode Comparison\n> | Mode | Flexibility | Interaction | Best For |\n> |------|-------------|-------------|----------|\n> | Online | High | Digital only | Working professionals |\n> | Blended | Medium | Mixed | Balanced approach |\n> | Classroom | Low | Face-to-face | Structured learners |",
+    answer: "The main differences are in flexibility and interaction:\n- **Online**: High flexibility, digital-only interaction. Best for working professionals.\n- **Blended**: Medium flexibility, a mix of digital and in-person interaction. Offers a balanced approach.\n- **Classroom**: Low flexibility, high face-to-face interaction. Best for structured learners.",
     category: "Study Options & Duration",
     keywords: [],
     provider_specific: false,
@@ -121,7 +121,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "How many hours per week do I need to study?",
-    answer: "> [!note] Study Time Guidelines\n> - **Minimum**: 8-10 hours per week\n> - **Average**: 12-15 hours per week\n> - **Intensive**: 20+ hours per week (for faster completion)",
+    answer: "Study time depends on your pace, but here are some general guidelines:\n- **Minimum**: 8-10 hours per week\n- **Average**: 12-15 hours per week\n- **Intensive**: 20+ hours per week for faster completion.",
     category: "Study Options & Duration",
     keywords: [],
     provider_specific: false,
@@ -135,7 +135,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "How much does CPP41419 cost?",
-    answer: "> [!abstract] Cost Breakdown by Provider Type\n> ```mermaid\n> graph TD\n>     A[CPP41419 Costs] --> B[Online RTOs<br/>$1,495-$1,895]\n>     A --> C[TAFE Institutes<br/>$2,200-$2,670]\n>     A --> D[Industry Bodies<br/>$2,050-$2,950]\n>     A --> E[Universities<br/>$2,750-$2,890]\n>     \n>     style B fill:#e8f5e8\n>     style C fill:#e1f5fe\n>     style D fill:#fff3e0\n>     style E fill:#f3e5f5\n> ```\nCourse fees range from $1,495 to $2,890 depending on the provider type and delivery method.^[7]",
+    answer: "Course fees generally range from $1,495 to $2,890. Costs vary depending on the provider type:\n- **Online RTOs**: $1,495 - $1,895\n- **TAFE Institutes**: $2,200 - $2,670\n- **Industry Bodies**: $2,050 - $2,950\n- **Universities**: $2,750 - $2,890.^[7]",
     category: "Costs & Payment",
     keywords: [],
     provider_specific: false,
@@ -147,7 +147,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "Are there additional costs beyond the course fee?",
-    answer: "> [!warning] Hidden Costs to Consider\n> | Cost Type | Range | When Required |\n> |-----------|-------|---------------|\n> | Learning Materials | $50-$120 | Some providers |\n> | Assessment Retakes | $75-$150 | If needed |\n> | Criminal History Check | $45-$56 | Licensing application |\n> | License Application | $145-$675 | Varies by state |\n> | Professional Insurance | $300-$600/year | Most states |",
+    answer: "Yes, be aware of potential additional costs such as:\n- **Learning Materials**: $50-$120 (for some providers)\n- **Assessment Retakes**: $75-$150 (if needed)\n- **Criminal History Check**: $45-$56 (for licensing)\n- **License Application Fee**: $145-$675 (varies by state)\n- **Professional Insurance**: $300-$600 per year (in most states).",
     category: "Costs & Payment",
     keywords: [],
     provider_specific: false,
@@ -171,7 +171,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "Can I get government funding or subsidies?",
-    answer: "> [!success] Funding Options by State\n> - **VIC**: Skills First funding (up to 50% reduction)\n> - **QLD**: Certificate 3 Guarantee (free for under 25s)\n> - **WA**: Jobs and Skills Centres (up to 60% reduction)\n> - **SA**: Skills for All program (up to 50% reduction)\n> - **TAS**: Skills Tasmania (up to 70% reduction)\n> - **ACT**: Skilled Capital program (up to 60% reduction)\n> - **NT**: Territory Training Assistance (up to 75% reduction)",
+    answer: "Yes, government funding is available in many states and can significantly reduce costs. Programs include:\n- **VIC**: Skills First funding (up to 50% reduction)\n- **QLD**: Certificate 3 Guarantee (free for under 25s)\n- **WA**: Jobs and Skills Centres (up to 60% reduction)\n- **SA**: Skills for All program (up to 50% reduction)\n- **TAS**: Skills Tasmania (up to 70% reduction)\n- **ACT**: Skilled Capital program (up to 60% reduction)\n- **NT**: Territory Training Assistance (up to 75% reduction)",
     category: "Costs & Payment",
     keywords: [],
     provider_specific: false,
@@ -197,7 +197,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "Which states require the full CPP41419 for initial licensing?",
-    answer: "> [!example] Licensing Requirements Map\n> ```\n> Full CPP41419 Required:\n> ├─ VIC (Agent's Representative)\n> ├─ WA (Triennial License)\n> ├─ TAS (Property Agent Registration)\n> └─ NT (Agent Registration)\n> \n> Staged Licensing Available:\n> ├─ NSW (4 units for Certificate of Registration)\n> ├─ QLD (Core units for Registration Certificate)\n> ├─ SA (Core units + SA specifics)\n> └─ ACT (Core units for Agent Registration)\n> ```",
+    answer: "Some states require the full CPP41419 qualification to start, while others have a staged licensing system.\n\n**Full Qualification Required to Start**:\n- Victoria (for Agent's Representative)\n- Western Australia (for Triennial License)\n- Tasmania (for Property Agent Registration)\n- Northern Territory (for Agent Registration)\n\n**Staged Licensing Available** (entry with partial completion):\n- NSW (5 core units for Certificate of Registration)\n- QLD (7 core units for Registration Certificate)\n- SA (Core units + SA specifics)\n- ACT (Core units for Agent Registration)",
     category: "State Licensing Requirements",
     keywords: [],
     provider_specific: false,
@@ -221,7 +221,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "How long is the experience requirement in each state?",
-    answer: "> [!tip] Experience Requirements\n> | State | Initial License | Full License | Special Notes |\n> |-------|----------------|--------------|---------------|\n> | NSW | None | 12 months | Assistant Agent period |\n> | VIC | None | 18 months | For Estate Agent upgrade |\n> | QLD | None | 12 months | For Salesperson license |\n> | WA | Varies | Varies | Experience varies by role |\n> | SA | None | 12-24 months | Registration to License |\n> | TAS | None | 12 months | Property Agent upgrade |\n> | ACT | None | 12 months | Agent Registration to License |\n> | NT | None | 18 months | Longest requirement |",
+    answer: "Experience requirements for a full license vary by state:\n- **NSW**: 12 months as an Assistant Agent.\n- **VIC**: 18 months for an Estate Agent upgrade.\n- **QLD**: 12 months for a Salesperson license.\n- **SA**: 12-24 months to go from Registration to a full License.\n- **TAS**: 12 months for a Property Agent upgrade.\n- **ACT**: 12 months to go from Agent Registration to a full License.\n- **NT**: 18 months.\n- **WA**: Varies by role.",
     category: "State Licensing Requirements",
     keywords: [],
     provider_specific: false,
@@ -233,7 +233,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "Can I transfer my license between states?",
-    answer: "Limited mutual recognition exists:\n> [!note] Interstate Recognition\n> - **NSW ↔ VIC**: Some recognition with additional requirements\n> - **NSW ↔ QLD**: Mutual recognition agreement\n> - **Other states**: Generally require new application and may need additional training\n> \n> Always check with destination state licensing authority.^[8]",
+    answer: "Yes, but rules vary. While there is limited mutual recognition, you often need to apply for a new license in the destination state. \n- **NSW & QLD**: Have a mutual recognition agreement.\n- **NSW & VIC**: Have some recognition, but there are additional requirements.\n- **Other states**: Generally require a new application and may require additional state-specific training.\n\nAlways check with the licensing authority in the state you plan to work in.^[8]",
     category: "State Licensing Requirements",
     keywords: [],
     provider_specific: false,
@@ -259,7 +259,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What happens if I fail an assessment?",
-    answer: "> [!warning] Retake Process\n> ```mermaid\n> graph LR\n>     A[Failed Assessment] --> B[Review Feedback]\n>     B --> C[Additional Study]\n>     C --> D[Retake Assessment]\n>     D --> E{Pass?}\n>     E -->|Yes| F[Continue Course]\n>     E -->|No| G[Further Support<br/>Additional Retakes]\n> ```\nMost providers allow 2-3 retake attempts per unit. Additional fees may apply.",
+    answer: "If you fail an assessment, the typical process is to review the feedback from your trainer, undertake additional study, and then retake the assessment. Most providers allow 2-3 retake attempts per unit. Additional fees may apply for further attempts.",
     category: "Assessment & Completion",
     keywords: [],
     provider_specific: false,
@@ -271,7 +271,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "How difficult is CPP41419?",
-    answer: "> [!success] Success Factors\n> **Success Rates**: 70-90% depending on provider\n> **Key Success Factors**:\n> - Consistent study schedule\n> - Active participation in training\n> - Practical application of concepts\n> - Seeking help when needed",
+    answer: "Success rates are generally high (70-90%), depending on the provider. Key factors for successfully completing the course include maintaining a consistent study schedule, actively participating in training, applying concepts practically, and seeking help from trainers when you need it.",
     category: "Assessment & Completion",
     keywords: [],
     provider_specific: false,
@@ -283,7 +283,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What support is available during study?",
-    answer: "> [!check] Support Services\n> - **Trainer Access**: Email, phone, video calls\n> - **Study Groups**: Online forums and peer networks\n> - **Learning Materials**: Videos, interactive modules, textbooks\n> - **Technical Support**: Platform assistance\n> - **Career Guidance**: Job placement assistance",
+    answer: "Providers offer a range of support services, including:\n- **Trainer Access**: Via email, phone, and video calls.\n- **Study Groups**: Online forums and peer networks.\n- **Learning Materials**: A mix of videos, interactive modules, and textbooks.\n- **Technical Support**: Assistance with the learning platform.\n- **Career Guidance**: Help with job placement and career planning.",
     category: "Assessment & Completion",
     keywords: [],
     provider_specific: false,
@@ -297,7 +297,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What jobs can I get with CPP41419?",
-    answer: "> [!abstract] Career Pathways\n> ```mermaid\n> graph TD\n>     A[CPP41419 Completion] --> B[Entry Level]\n>     B --> C[Sales Agent<br/>$50-70k]\n>     B --> D[Property Manager<br/>$45-65k]\n>     B --> E[Leasing Consultant<br/>$42-58k]\n>     \n>     C --> F[Senior Roles]\n>     D --> F\n>     E --> F\n>     \n>     F --> G[Senior Sales Agent<br/>$80-150k+]\n>     F --> H[Property Development<br/>$90-200k+]\n>     F --> I[Commercial Specialist<br/>$100-300k+]\n> ```",
+    answer: "Completing CPP41419 opens doors to several roles. Entry-level positions include:\n- **Sales Agent** (Typical OTE: $50k-$70k)\n- **Property Manager** (OTE: $45k-$65k)\n- **Leasing Consultant** (OTE: $42k-$58k)\n\nWith experience, you can progress to senior roles like Senior Sales Agent ($80k-$150k+), or specialize in areas like Commercial Real Estate or Property Development.",
     category: "Career & Employment",
     keywords: [],
     provider_specific: false,
@@ -321,7 +321,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What's the average salary for real estate agents?",
-    answer: "> [!example] Salary Ranges by Experience\n> | Experience Level | Salary Range | Notes |\n> |------------------|--------------|-------|\n> | Entry Level (0-2 years) | $45,000-$70,000 | Base + commission |\n> | Experienced (3-5 years) | $70,000-$120,000 | Higher commission rates |\n> | Senior (5+ years) | $100,000-$300,000+ | Top performers |\n> | Principal/Owner | $150,000-$500,000+ | Agency ownership |",
+    answer: "Salaries (including commission) vary by experience:\n- **Entry Level (0-2 years)**: $45,000 - $70,000\n- **Experienced (3-5 years)**: $70,000 - $120,000\n- **Senior (5+ years)**: $100,000 - $300,000+\n- **Principal/Owner**: $150,000 - $500,000+",
     category: "Career & Employment",
     keywords: [],
     provider_specific: false,
@@ -359,7 +359,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "How do I choose the best CPP41419 provider?",
-    answer: "> [!tip] Provider Selection Criteria\n> ```mermaid\n> graph LR\n>     A[Provider Selection] --> B[Study Mode Preference]\n>     A --> C[Budget Considerations]\n>     A --> D[Support Services]\n>     A --> E[State Specialization]\n>     A --> F[Industry Connections]\n>     \n>     B --> G[Online/Classroom/Blended]\n>     C --> H[Course Fees + Hidden Costs]\n>     D --> I[Trainer Access + Materials]\n>     E --> J[Local Law Knowledge]\n>     F --> K[Job Placement Assistance]\n> ```",
+    answer: "When choosing a provider, consider these key factors:\n- **Study Mode**: Do you prefer online, in-person, or blended learning?\n- **Budget**: Compare course fees and any potential hidden costs.\n- **Support Services**: Check the level of trainer access and quality of study materials.\n- **State Specialization**: Ensure they have strong knowledge of your state's laws.\n- **Industry Connections**: Look for providers with good job placement assistance.",
     category: "Provider Selection",
     keywords: [],
     provider_specific: false,
@@ -371,7 +371,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What's the difference between TAFE and private RTOs?",
-    answer: "> [!abstract] TAFE vs Private RTO Comparison\n> | Factor | TAFE | Private RTOs |\n> |--------|------|--------------|\n> | Cost | Higher ($2,200-$2,670) | Lower ($1,495-$2,500) |\n> | Government Backing | Yes | Varies |\n> | Flexibility | Lower | Higher |\n> | Face-to-Face Options | More available | Limited |\n> | Industry Connections | Established | Varies |\n> | Study Pace | Fixed semesters | Self-paced options |",
+    answer: "TAFE and private RTOs differ in several ways:\n- **Cost**: TAFE is often more expensive ($2,200-$2,670) than private RTOs ($1,495-$2,500).\n- **Flexibility**: Private RTOs typically offer more flexibility and self-paced options, while TAFE follows a more structured semester-based schedule.\n- **Learning Style**: TAFE often has more face-to-face options, whereas private RTOs are frequently online-focused.",
     category: "Provider Selection",
     keywords: [],
     provider_specific: false,
@@ -383,7 +383,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "Should I choose an industry body for training?",
-    answer: "> [!success] Industry Body Advantages\n> - **Strong Industry Connections**: Direct links to agencies\n> - **Local Market Knowledge**: State-specific insights\n> - **Ongoing Support**: Continuing education and networking\n> - **Credibility**: Industry recognition and reputation\n> \n> **Examples**: REINSW (NSW), REIQ (QLD), REIWA (WA)",
+    answer: "Training with an industry body like REINSW (NSW) or REIQ (QLD) has several advantages:\n- **Industry Connections**: They have direct links to real estate agencies.\n- **Local Knowledge**: Their content is highly specialized for their state.\n- **Credibility**: Their qualifications are highly respected in the industry.\n- **Ongoing Support**: They offer valuable networking and continuing education opportunities.",
     category: "Provider Selection",
     keywords: [],
     provider_specific: false,
@@ -395,7 +395,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "Are online-only providers legitimate?",
-    answer: "Yes, many reputable online providers offer nationally accredited CPP41419:\n- Open Colleges\n- TrainSmart Australia\n- Kaplan Professional\n- Entry Education\n\nEnsure the provider is ASQA registered and offers proper support.^[9]",
+    answer: "Yes, many legitimate and reputable providers (like Open Colleges, Kaplan Professional, and Entry Education) offer nationally accredited CPP41419 courses entirely online. Always ensure the provider is registered with the Australian Skills Quality Authority (ASQA) and offers strong student support.^[9]",
     category: "Provider Selection",
     keywords: [],
     provider_specific: false,
@@ -409,7 +409,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What technology do I need for online study?",
-    answer: "> [!check] Technical Requirements\n> **Minimum Requirements**:\n> - Reliable internet connection (minimum 10 Mbps)\n> - Computer or tablet with webcam and microphone\n> - Up-to-date web browser (Chrome, Firefox, Safari, Edge)\n> - Basic computer skills (email, file management, web browsing)\n> \n> **Recommended**:\n> - Dedicated study space\n> - Printer for assignments\n> - Note-taking applications",
+    answer: "For online study, you'll need:\n- A reliable internet connection (at least 10 Mbps).\n- A computer or tablet with a webcam and microphone.\n- An up-to-date web browser (like Chrome or Firefox).\n- Basic computer skills for managing files and using email.",
     category: "Technical Requirements",
     keywords: [],
     provider_specific: false,
@@ -433,7 +433,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What if I have technical problems during study?",
-    answer: "> [!info] Technical Support Options\n> Most providers offer:\n> - **Help Desk**: Phone and email support\n> - **Live Chat**: Real-time assistance\n> - **Video Tutorials**: Platform navigation guides\n> - **Technical Documentation**: Step-by-step guides\n> - **Alternative Access**: Downloadable materials for offline study",
+    answer: "Most providers offer comprehensive technical support, including phone and email help desks, live chat, video tutorials, and step-by-step guides to help you with any platform issues.",
     category: "Technical Requirements",
     keywords: [],
     provider_specific: false,
@@ -459,7 +459,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "Can I specialize during my CPP41419 studies?",
-    answer: "> [!example] Specialization Options Through Electives\n> - **Residential Sales**: Focus on property sales and marketing units\n> - **Property Management**: Emphasize leasing and tenancy management\n> - **Commercial Real Estate**: Include business broking and commercial units\n> - **Auction Services**: Add auction-specific training units",
+    answer: "Yes, you can specialize by choosing specific elective units. Common specializations include:\n- **Residential Sales**: Focusing on marketing and selling properties.\n- **Property Management**: Focusing on leasing and tenancy management.\n- **Commercial Real Estate**: Including units on business broking.\n- **Auction Services**: Adding auction-specific training.",
     category: "Advanced Questions",
     keywords: [],
     provider_specific: false,
@@ -471,7 +471,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What continuing education is required after licensing?",
-    answer: "> [!warning] CPD Requirements by State\n> | State | Annual CPD Hours | Cost Range |\n> |-------|-----------------|-------------|\n> | NSW | 12 hours | $200-$400 |\n> | VIC | 12 hours | $200-$400 |\n> | QLD | 10 hours | $150-$350 |\n> | WA | 30 hours (over 3 years) | $600-$900 |\n> | SA | Varies | $300-$500 |\n> | TAS | 10 hours | $250-$400 |\n> | ACT | 12 hours | $350-$500 |\n> | NT | 12 hours | $400-$600 |",
+    answer: "Most states require Continuing Professional Development (CPD) to maintain your license. Annual requirements are:\n- **NSW & VIC**: 12 hours\n- **QLD & TAS**: 10 hours\n- **ACT & NT**: 12 hours\n- **WA**: 10 points (equivalent to 10 hours) per year, or 30 points over 3 years.\n- **SA**: Requirements vary.",
     category: "Advanced Questions",
     keywords: [],
     provider_specific: false,
@@ -483,7 +483,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "Can CPP41419 lead to further qualifications?",
-    answer: "Yes, progression pathways include:\n> [!success] Further Education Options\n> - **CPP51122 Diploma of Property Services**: For agency principal licensing\n> - **Bachelor of Property**: University-level property studies\n> - **Specialized Certifications**: Auctioneering, commercial real estate, property development\n> - **Business Qualifications**: For agency management and ownership",
+    answer: "Yes, CPP41419 is a pathway to further qualifications, such as:\n- **CPP51122 Diploma of Property (Agency Management)**: Required to run your own agency in most states.\n- **Bachelor of Property**: For university-level studies.\n- **Specialized Certifications**: In areas like auctioneering or commercial real estate.",
     category: "Advanced Questions",
     keywords: [],
     provider_specific: false,
@@ -495,7 +495,7 @@ export const questions: FAQQuestion[] = [
   {
     id: generateId(),
     question: "What if regulations change after I complete CPP41419?",
-    answer: "Your qualification remains valid, but you may need:\n- Additional CPD to cover new regulations\n- Refresher training for significant changes\n- Updated licensing applications for new requirements\n\nStay informed through industry bodies and [cpp41419.com.au](https://cpp41419.com.au) updates.^[10]",
+    answer: "Your qualification remains valid, but you may be required to complete additional CPD or refresher training to stay up-to-date with significant regulatory changes. Always stay informed through your state's licensing body and industry news.^[10]",
     category: "Advanced Questions",
     keywords: [],
     provider_specific: false,

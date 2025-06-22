@@ -7,7 +7,7 @@ const cleanAnswerText = (text: string): string => {
   cleanedText = cleanedText.replace(/> \[![\w\s]+\]/g, '');
   cleanedText = cleanedText.replace(/\^\[\d+\]/g, '');
   cleanedText = cleanedText.replace(/[#*_`>|┌├└─→]/g, '');
-  cleanedText = cleanedText.replace(/\\n/g, '\n'); // Convert escaped newlines to actual newlines for paragraph breaks
+  cleanedText = cleanedText.replace(/\n/g, ' '); // Convert newlines to spaces for a concise answer
   cleanedText = cleanedText.replace(/\s\s+/g, ' ').trim();
   return cleanedText;
 };

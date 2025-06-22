@@ -34,7 +34,7 @@ export function QuestionDisplay({ question }: QuestionDisplayProps) {
         </div>
       </CardHeader>
       <CardContent className="space-y-4 text-foreground/90 leading-relaxed text-base py-6">
-        {question.answer.split('\\n').map((paragraph, index) => (
+        {question.answer.split('\n').map((paragraph, index) => (
           paragraph.trim() && <p key={index}>{paragraph}</p>
         ))}
       </CardContent>
