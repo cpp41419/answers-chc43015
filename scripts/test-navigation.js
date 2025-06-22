@@ -4,7 +4,7 @@ async function testNavigation() {
   const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
   
-  const APP_URL = 'http://localhost:9002'; // Updated port to match package.json
+  const APP_URL = 'http://localhost:9003'; // Updated port to match package.json
 
   // Test desktop navigation
   await page.setViewport({ width: 1200, height: 800 });
