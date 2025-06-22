@@ -13,7 +13,8 @@ import { getAllQuestions } from '@/data/questions';
 import { FaqSchema } from '@/components/core/FaqSchema';
 import { CategoryCard } from '@/components/qa/CategoryCard';
 import type { FAQQuestion } from '@/types';
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { QuestionListItem } from '@/components/qa/QuestionListItem';
 
 const cyclingWords = [
   "That Delivers Results",
@@ -65,6 +66,35 @@ export default function HomeClient() {
   }, []);
 
   const allQuestions = getAllQuestions();
+
+  const questionsByCategory = useMemo(() => {
+    return allQuestions.reduce((acc, question) => {
+      const categoryName = question.category;
+      if (!acc[categoryName]) {
+        acc[categoryName] = [];
+      }
+      acc[categoryName].push(question);
+      return acc;
+    }, {} as Record<string, (FAQQuestion & {slug: string})[]>);
+  }, [allQuestions]);
+
+  const categorySlugs = useMemo(() => {
+    const slugs: { [key: string]: string } = {};
+    categories.forEach(cat => {
+      slugs[cat.name] = cat.slug;
+    });
+    return slugs;
+  }, []);
+
+  const sortedCategoryNames = useMemo(() => {
+    return Object.keys(questionsByCategory).sort((a, b) => {
+      const catA = categories.find(c => c.name === a);
+      const catB = categories.find(c => c.name === b);
+      const indexA = catA ? categories.indexOf(catA) : -1;
+      const indexB = catB ? categories.indexOf(catB) : -1;
+      return indexA - indexB;
+    });
+  }, [questionsByCategory]);
 
   const popularTopics = useMemo(() => {
     const keywordMap = new Map<string, { question: (FAQQuestion & { slug: string; }) }>();
@@ -223,6 +253,43 @@ export default function HomeClient() {
               </Button>
           ))}
           </div>
+        </div>
+      </section>
+
+      {/* All Questions Accordion Section */}
+      <section className="py-16 md:py-20 bg-background border-t">
+        <div className="container mx-auto px-4 md:px-6">
+            <div className="flex justify-center mb-12">
+                <h2 className="text-3xl font-bold text-foreground bg-amber-200/80 px-6 py-2 rounded-md -rotate-1 shadow-md dark:text-gray-800">
+                    Master FAQ Index
+                </h2>
+            </div>
+            <p className="max-w-3xl mx-auto text-lg text-center text-muted-foreground mb-12">
+                Browse every question on the site, organized by category. Find the answers you need to start your real estate career.
+            </p>
+
+            <Accordion type="multiple" className="w-full max-w-4xl mx-auto space-y-4">
+                {sortedCategoryNames.map((categoryName) => {
+                const questions = questionsByCategory[categoryName];
+                const categorySlug = categorySlugs[categoryName];
+                if (!questions || !categorySlug) return null;
+
+                return (
+                    <AccordionItem value={categoryName} key={categoryName} className="border bg-card rounded-xl shadow-sm">
+                    <AccordionTrigger className="text-xl font-semibold hover:no-underline p-6 text-left">
+                        <span className="flex-1 text-left">{categoryName} ({questions.length})</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-6 pb-6">
+                        <div className="space-y-4">
+                        {questions.map((question) => (
+                            <QuestionListItem key={question.id} question={question} categorySlug={categorySlug} />
+                        ))}
+                        </div>
+                    </AccordionContent>
+                    </AccordionItem>
+                );
+                })}
+            </Accordion>
         </div>
       </section>
 
