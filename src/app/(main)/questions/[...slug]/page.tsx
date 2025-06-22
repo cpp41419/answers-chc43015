@@ -1,5 +1,5 @@
 
-import { getQuestionById, getQuestionsByCategory } from '@/data/questions';
+import { getQuestionBySlug, getQuestionsByCategory } from '@/data/questions';
 import { categories }  from '@/data/categories';
 import { QuestionDisplay } from '@/components/qa/QuestionDisplay';
 import { Breadcrumbs } from '@/components/core/Breadcrumbs';
@@ -12,10 +12,11 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { generateFollowUpQuestions, GenerateFollowUpQuestionsInput } from '@/ai/flows/generate-follow-up-questions';
 import { QuestionSchema } from '@/components/core/QuestionSchema';
 import { QuestionListItem } from '@/components/qa/QuestionListItem';
+import { getAllQuestions } from '@/data/questions';
 
 // This component handles rendering for both category pages and question detail pages.
 // e.g., /questions/some-category
-// e.g., /questions/some-category/some-question-id
+// e.g., /questions/some-category/some-question-slug
 
 interface DynamicQuestionPageProps {
   params: { slug: string[] };
@@ -33,8 +34,8 @@ export async function generateMetadata({ params }: DynamicQuestionPageProps): Pr
   }
 
   if (slug.length === 2) { // This is a Question page
-    const questionId = slug[1];
-    const question = getQuestionById(questionId);
+    const questionSlug = slug[1];
+    const question = getQuestionBySlug(questionSlug);
     const title = question ? `${question.question.substring(0, 60)}... | CPP41419 Q&A` : 'Question | CPP41419 Q&A';
     const description = question ? question.answer.substring(0, 150) + '...' : 'View question and answer details for CPP41419.';
     const keywords = question ? question.keywords.join(', ') : 'real estate question, cpp41419 details';
@@ -54,13 +55,14 @@ export async function generateStaticParams() {
     });
   }
 
-  // Generate paths for all question pages
-  for (const category of categories) {
-    const questionsInCategory = getQuestionsByCategory(category.slug);
-    for (const question of questionsInCategory) {
-      paths.push({
-        slug: [category.slug, question.id],
-      });
+  // Generate paths for all question pages using slugs
+  const allQuestionsWithSlugs = getAllQuestions();
+  for (const question of allQuestionsWithSlugs) {
+    const category = categories.find(c => c.name === question.category);
+    if (category) {
+        paths.push({
+          slug: [category.slug, question.slug],
+        });
     }
   }
   
@@ -136,8 +138,8 @@ export default async function DynamicQuestionPage({ params }: DynamicQuestionPag
   // Render Question Page Content
   if (slug.length === 2) {
     const categorySlug = slug[0];
-    const questionId = slug[1];
-    const question = getQuestionById(questionId);
+    const questionSlug = slug[1];
+    const question = getQuestionBySlug(questionSlug);
     const category = categories.find(c => c.slug === categorySlug);
 
     if (!question || !category) {

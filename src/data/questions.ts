@@ -1,6 +1,7 @@
 
 import type { FAQQuestion } from '@/types';
 import { categories as allDefinedCategories } from './categories';
+import { slugify } from '@/lib/utils';
 
 const generateId = () => crypto.randomUUID();
 const defaultLastUpdated = new Date().toISOString();
@@ -792,26 +793,35 @@ export const questions: FAQQuestion[] = [
   }
 ];
 
-export function getQuestionsByCategory(categorySlug: string): FAQQuestion[] {
+export function getQuestionBySlug(slug: string): FAQQuestion | undefined {
+  return questions.find(q => slugify(q.question) === slug);
+}
+
+export function getQuestionsByCategory(categorySlug: string): (FAQQuestion & { slug: string })[] {
   const category = allDefinedCategories.find(c => c.slug === categorySlug);
   if (!category) return [];
-  return questions.filter(q => q.category === category.name).sort((a, b) => {
-    if (a.priority !== b.priority) {
-      return a.priority - b.priority;
-    }
-    return new Date(b.last_updated).getTime() - new Date(a.last_updated).getTime();
-  });
+  return questions
+    .filter(q => q.category === category.name)
+    .map(q => ({...q, slug: slugify(q.question)}))
+    .sort((a, b) => {
+      if (a.priority !== b.priority) {
+        return a.priority - b.priority;
+      }
+      return new Date(b.last_updated).getTime() - new Date(a.last_updated).getTime();
+    });
 }
 
 export function getQuestionById(questionId: string): FAQQuestion | undefined {
   return questions.find(q => q.id === questionId);
 }
 
-export function getAllQuestions(): FAQQuestion[] {
-  return [...questions].sort((a, b) => {
-    if (a.priority !== b.priority) {
-      return a.priority - b.priority;
-    }
-    return new Date(b.last_updated).getTime() - new Date(a.last_updated).getTime();
-  });
+export function getAllQuestions(): (FAQQuestion & { slug: string })[] {
+  return [...questions]
+    .map(q => ({...q, slug: slugify(q.question)}))
+    .sort((a, b) => {
+      if (a.priority !== b.priority) {
+        return a.priority - b.priority;
+      }
+      return new Date(b.last_updated).getTime() - new Date(a.last_updated).getTime();
+    });
 }

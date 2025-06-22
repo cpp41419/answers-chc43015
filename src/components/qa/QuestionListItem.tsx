@@ -5,13 +5,13 @@ import { ChevronRight, FileQuestion } from 'lucide-react';
 import type { FAQQuestion } from '@/types';
 
 interface QuestionListItemProps {
-  question: FAQQuestion;
+  question: FAQQuestion & { slug: string };
   categorySlug: string;
 }
 
 export function QuestionListItem({ question, categorySlug }: QuestionListItemProps) {
   return (
-    <Link href={`/questions/${categorySlug}/${question.id}`} className="group block">
+    <Link href={`/questions/${categorySlug}/${question.slug}`} className="group block">
       <Card className="bg-card text-card-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 rounded-lg hover:shadow-lg ease-in-out">
         <CardHeader className="flex flex-row items-center justify-between p-4">
           <div className="flex items-start gap-3">
@@ -33,4 +33,3 @@ export function QuestionListItem({ question, categorySlug }: QuestionListItemPro
     </Link>
   );
 }
-

@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -69,7 +70,7 @@ export function StateFaqSection() {
                     <ul className="space-y-4">
                       {stateFaqs[state].map(q => (
                         <li key={q.id}>
-                          <Link href={`/questions/${slugify(q.category)}/${q.id}`} className="group flex items-start text-primary hover:underline">
+                          <Link href={`/questions/${slugify(q.category)}/${slugify(q.question)}`} className="group flex items-start text-primary hover:underline">
                              <ChevronRight className="h-5 w-5 mr-2 mt-0.5 shrink-0 text-primary/50 group-hover:text-primary transition-colors"/>
                              <span>{q.question}</span>
                           </Link>

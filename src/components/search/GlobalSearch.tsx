@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Fragment, useEffect, useState } from 'react';
@@ -8,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { getAllQuestions } from '@/data/questions';
 import { slugify } from '@/lib/utils';
+import type { FAQQuestion } from '@/types';
 
 interface SearchResult {
   id: string;
@@ -25,13 +27,13 @@ const searchablePages: Omit<SearchResult, 'type'>[] = [
   { id: 'quiz', title: 'Find Your Perfect CPP41419 Provider Quiz', href: '/quiz', category: 'Tools' },
 ];
 
-const allQuestions = getAllQuestions();
+const allQuestions = getAllQuestions(); // This now returns questions with slugs
 const allSearchableContent: SearchResult[] = [
   ...searchablePages.map(p => ({ ...p, type: 'page' as const })),
   ...allQuestions.map(q => ({
     id: q.id,
     title: q.question,
-    href: `/questions/${slugify(q.category)}/${q.id}`,
+    href: `/questions/${slugify(q.category)}/${q.slug}`, // Use the pre-generated slug
     category: q.category,
     type: 'question' as const
   }))
