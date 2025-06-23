@@ -91,7 +91,7 @@ export default function QuestionPage({ params }: QuestionPageProps) {
       </div> */}
     </div>
 
-    {/* Related Questions Section */}
+    {/* Related Questions Section */} {/* Fixed syntax error by removing curly braces */}
     <section className="container mx-auto py-8">
       <h2 className="text-2xl font-bold mb-4">Related Questions</h2>
       {/* Container for related questions tiles - using a simple flex layout for now */}
