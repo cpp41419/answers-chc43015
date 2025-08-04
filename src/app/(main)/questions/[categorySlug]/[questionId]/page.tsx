@@ -47,67 +47,69 @@ export default function QuestionPage({ params }: QuestionPageProps) {
 
 
   return (
-    <div className="container mx-auto py-8 p-4"> {/* Added p-4 here */}
-      <Breadcrumbs items={breadcrumbs} />
+    <>
+      <div className="container mx-auto py-8 p-4"> {/* Added p-4 here */}
+        <Breadcrumbs items={breadcrumbs} />
 
-      <FaqSchema question={question.title} answer={question.answer} />
+        <FaqSchema question={question.title} answer={question.answer} />
 
-      <h1 className="text-3xl font-bold mb-4">{question.title}</h1>
+        <h1 className="text-3xl font-bold mb-4">{question.title}</h1>
 
-      <QuestionDisplay answer={question.answer} />
+        <QuestionDisplay answer={question.answer} />
 
-      <div className="mt-8 flex justify-between">
-        {previousQuestion ? (
-          <Button asChild>
-            <Link href={`/questions/${category.slug}/${previousQuestion.id}`}>
-              Previous Question
-            </Link>
-          </Button>
-        ) : (
-          <div></div> // Empty div to maintain spacing if no previous button
-        )}
-        {nextQuestion ? (
-          <Button asChild>
-            <Link href={`/questions/${category.slug}/${nextQuestion.id}`}>
-              Next Question
-            </Link>
-          </Button>
-        ) : (
-          <div></div> // Empty div to maintain spacing if no next button
-        )}
+        <div className="mt-8 flex justify-between">
+          {previousQuestion ? (
+            <Button asChild>
+              <Link href={`/questions/${category.slug}/${previousQuestion.id}`}>
+                Previous Question
+              </Link>
+            </Button>
+          ) : (
+            <div></div> // Empty div to maintain spacing if no previous button
+          )}
+          {nextQuestion ? (
+            <Button asChild>
+              <Link href={`/questions/${category.slug}/${nextQuestion.id}`}>
+                Next Question
+              </Link>
+            </Button>
+          ) : (
+            <div></div> // Empty div to maintain spacing if no next button
+          )}
+        </div>
+
+        {/* You might want to add related questions or other content here */}
+        {/* Example of listing other questions in the same category: */}
+        {/* <div className="mt-8">
+          <h2 className="text-2xl font-bold mb-4">More from {category.name}</h2>
+          <ul>
+            {category.questions.map((q) => (
+              <li key={q.id}>
+                <QuestionListItem question={q} categorySlug={category.slug} />
+              </li>
+            ))}
+          </ul>
+        </div> */}
       </div>
 
-      {/* You might want to add related questions or other content here */}
-      {/* Example of listing other questions in the same category: */}
-      {/* <div className="mt-8">
-        <h2 className="text-2xl font-bold mb-4">More from {category.name}</h2>
-        <ul>
-          {category.questions.map((q) => (
-            <li key={q.id}>
-              <QuestionListItem question={q} categorySlug={category.slug} />
-            </li>
-          ))}
-        </ul>
-      </div> */}
-    </div>
-
-    {/* Related Questions Section */}
-    <section className="container mx-auto py-8">
-      <h2 className="text-2xl font-bold mb-4">Related Questions</h2>
-      {/* Container for related questions tiles - using a simple flex layout for now */}
-      <div className="flex flex-wrap -mx-2">
-        {/* TODO: Add logic here to fetch and map related questions */}
-        {/*
-          Example of a related question tile structure:
-          <Link href={`/questions/${relatedCategory.slug}/${relatedQuestion.id}`} className="block w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
-            <div className="border p-4 rounded-md hover:shadow-md transition-shadow">
-              <h3 className="text-lg font-semibold mb-2">{relatedQuestion.title}</h3>
-              <p className="text-sm text-gray-600 line-clamp-2">{relatedQuestion.answer}</p> // Optional: Show snippet of answer
-            </div>
-          </Link>
-        */}
-      </div>
-    </section>
+      {/* Related Questions Section */}
+      <section className="container mx-auto py-8">
+        <h2 className="text-2xl font-bold mb-4">Related Questions</h2>
+        {/* Container for related questions tiles - using a simple flex layout for now */}
+        <div className="flex flex-wrap -mx-2">
+          {/* TODO: Add logic here to fetch and map related questions */}
+          {/*
+            Example of a related question tile structure:
+            <Link href={`/questions/${relatedCategory.slug}/${relatedQuestion.id}`} className="block w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
+              <div className="border p-4 rounded-md hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold mb-2">{relatedQuestion.title}</h3>
+                <p className="text-sm text-gray-600 line-clamp-2">{relatedQuestion.answer}</p> // Optional: Show snippet of answer
+              </div>
+            </Link>
+          */}
+        </div>
+      </section>
+    </>
   );
 }
 
