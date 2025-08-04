@@ -10,7 +10,7 @@ import { ArrowRight, BookOpen, Map as MapIcon, BarChartBig, Lightbulb, Clipboard
 import React from 'react';
 import { cn, slugify } from '@/lib/utils';
 import { getAllQuestions } from '@/data/questions';
-import { FaqSchema } from '@/components/core/FaqSchema';
+import { ComprehensiveSchema } from '@/components/core/ComprehensiveSchema';
 import { CategoryCard } from '@/components/qa/CategoryCard';
 import type { FAQQuestion } from '@/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -306,24 +306,24 @@ export default function HomeClient() {
                 <span className="p-3 bg-white/20 rounded-lg">
                   <Star className="h-6 w-6 text-yellow-300" />
                 </span>
-                <CardTitle className="text-2xl font-bold text-white">Exclusive RTO Offer</CardTitle>
+                <CardTitle className="text-2xl font-bold text-white">CPP41419 Features</CardTitle>
               </div>
               <CardDescription className="text-primary-foreground/80">
-                Limited time offer from our top-rated providers (Demo Offer).
+                Find out more about our comprehensive RTO services and features
               </CardDescription>
             </CardHeader>
             <CardContent className="relative z-10">
               <p className="text-lg mb-4">
-                Save up to <span className="font-bold text-4xl text-yellow-300">25%</span> on your CPP41419 course fees.
+                Discover the best <span className="font-bold text-yellow-300">CPP41419 training options</span> for your needs
               </p>
               <p className="text-primary-foreground/90 text-sm">
-                Take our 2-minute quiz to get matched with participating RTOs and unlock your exclusive discount.
+                Explore our complete guide to course features and training opportunities
               </p>
             </CardContent>
             <CardFooter className="relative z-10 bg-black/20 p-4">
               <Button asChild size="lg" className="w-full bg-accent text-accent-foreground font-bold hover:bg-accent/90">
-                <Link href="/quiz">
-                  Find Your Discount
+                <Link href="https://cpp41419.com.au/features" target="_blank" rel="noopener noreferrer">
+                  Explore Features
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -335,7 +335,14 @@ export default function HomeClient() {
         </p>
       </section>
 
-      <FaqSchema questions={allQuestions} />
+      <ComprehensiveSchema 
+        questions={allQuestions}
+        pageType="homepage"
+        title="CPP41419 Q&A - Complete Real Estate Training Guide"
+        description="Australia's only independent platform for CPP41419 Certificate IV in Real Estate Practice. Get matched with verified training providers through our anonymous evaluation system."
+        canonicalUrl="https://answers.cpp41419.com.au"
+        breadcrumbs={[]}
+      />
     </div>
   );
 }

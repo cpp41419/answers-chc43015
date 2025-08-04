@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import PopularBlogsClientPage from './blogs-client';
 
 export const metadata: Metadata = {
-  title: 'Popular Real Estate Blogs & Articles | CPP41419 Q&A',
-  description: 'Stay updated with the latest insights, trends, and advice from the real estate world.',
-  keywords: ['real estate blog', 'proptech', 'agent advice', 'licensing updates', 'rto reviews'],
+  title: 'CPP41419 Blogs & Articles | Real Estate Training Resources',
+  description: 'Comprehensive guides and articles about CPP41419 training, RTO selection, licensing requirements, and real estate career advice.',
+  keywords: ['CPP41419 blog', 'real estate training', 'RTO comparison', 'licensing guide', 'career advice', 'property services'],
 };
 
 export default function PopularBlogsPage() {
