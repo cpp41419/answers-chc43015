@@ -2,7 +2,8 @@ import { Fragment } from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-import { questions } from '@/data/questions';
+import { getQuestionsByCategory } from '@/data/questions';
+import { categories } from '@/data/categories';
 import { QuestionDisplay } from '@/components/qa/QuestionDisplay';
 import { QuestionListItem } from '@/components/qa/QuestionListItem';
 import { Breadcrumbs } from '@/components/core/Breadcrumbs';
@@ -17,13 +18,14 @@ interface QuestionPageProps {
 }
 
 export default function QuestionPage({ params }: QuestionPageProps) {
-  const category = questions.find((cat) => cat.slug === params.categorySlug);
+  const category = categories.find((cat) => cat.slug === params.categorySlug);
 
   if (!category) {
     notFound();
   }
 
-  const question = category.questions.find(
+  const questionsForCategory = getQuestionsByCategory(params.categorySlug);
+  const question = questionsForCategory.find(
     (q) => q.id === params.questionId
   );
 
@@ -35,15 +37,15 @@ export default function QuestionPage({ params }: QuestionPageProps) {
     { name: 'Home', href: '/' },
     { name: 'Questions', href: '/questions' },
     { name: category.name, href: `/questions/${category.slug}` },
-    { name: question.title, href: `/questions/${category.slug}/${question.id}` },
+    { name: question.question, href: `/questions/${category.slug}/${question.id}` },
   ];
 
   // Find previous and next questions within the same category
-  const questionIndex = category.questions.findIndex(
+  const questionIndex = questionsForCategory.findIndex(
     (q) => q.id === params.questionId
   );
-  const previousQuestion = questionIndex > 0 ? category.questions[questionIndex - 1] : null;
-  const nextQuestion = questionIndex < category.questions.length - 1 ? category.questions[questionIndex + 1] : null;
+  const previousQuestion = questionIndex > 0 ? questionsForCategory[questionIndex - 1] : null;
+  const nextQuestion = questionIndex < questionsForCategory.length - 1 ? questionsForCategory[questionIndex + 1] : null;
 
 
   return (
@@ -51,11 +53,11 @@ export default function QuestionPage({ params }: QuestionPageProps) {
       <div className="container mx-auto py-8 p-4"> {/* Added p-4 here */}
         <Breadcrumbs items={breadcrumbs} />
 
-        <FaqSchema question={question.title} answer={question.answer} />
+        <FaqSchema question={question.question} answer={question.answer} />
 
-        <h1 className="text-3xl font-bold mb-4">{question.title}</h1>
+        <h1 className="text-3xl font-bold mb-4">{question.question}</h1>
 
-        <QuestionDisplay answer={question.answer} />
+        <QuestionDisplay question={question} />
 
         <div className="mt-8 flex justify-between">
           {previousQuestion ? (
@@ -115,12 +117,16 @@ export default function QuestionPage({ params }: QuestionPageProps) {
 
 // Optional: Add generateStaticParams to pre-render pages
 export async function generateStaticParams() {
-  const paths = questions.flatMap(category =>
-    category.questions.map(question => ({
+  const { categories } = await import('@/data/categories');
+  const { getQuestionsByCategory } = await import('@/data/questions');
+  
+  const paths = categories.flatMap(category => {
+    const questionsForCategory = getQuestionsByCategory(category.slug);
+    return questionsForCategory.map(question => ({
       categorySlug: category.slug,
       questionId: question.id,
-    }))
-  );
+    }));
+  });
 
   return paths;
 }
