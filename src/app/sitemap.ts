@@ -3,7 +3,7 @@ import { getAllQuestions } from '@/data/questions';
 import { categories } from '@/data/categories';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://answers.cpp41419.com.au';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://answer.vercel.app';
   
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
