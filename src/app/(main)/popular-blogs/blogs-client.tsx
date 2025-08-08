@@ -53,7 +53,7 @@ const initialBlogPosts: BlogPost[] = [
     id: 'cpp-blog-1',
     title: "CPP41419 Course Overview & Requirements",
     description: "Complete guide to the Certificate IV in Property Services (Real Estate) qualification, including units, duration, and career outcomes.",
-    href: "https://cpp41419.com.au/blog/course-overview-requirements",
+    href: "https://www.cpp41419.com.au/blog/course-overview-requirements",
     category: "guides",
     imageUrl: "https://cpp41419.com.au/images/course-overview.jpg",
     imageHint: "real estate course materials"
@@ -62,7 +62,7 @@ const initialBlogPosts: BlogPost[] = [
     id: 'cpp-blog-2',
     title: "State-by-State Licensing Requirements",
     description: "Understanding real estate licensing requirements across all Australian states and territories, including fees and timeframes.",
-    href: "https://cpp41419.com.au/blog/state-licensing-requirements",
+    href: "https://www.cpp41419.com.au/blog/state-licensing-requirements",
     category: "licensing",
     imageUrl: "https://cpp41419.com.au/images/licensing-map.jpg",
     imageHint: "map of Australia with licensing info"
@@ -71,7 +71,7 @@ const initialBlogPosts: BlogPost[] = [
     id: 'cpp-blog-3',
     title: "RTO Comparison: Finding the Right Training Provider",
     description: "Independent analysis of major RTOs offering CPP41419, comparing costs, delivery methods, support, and student outcomes.",
-    href: "https://cpp41419.com.au/blog/rto-comparison-guide",
+    href: "https://www.cpp41419.com.au/blog/rto-comparison-guide",
     category: "rto-reviews",
     imageUrl: "https://cpp41419.com.au/images/rto-comparison.jpg",
     imageHint: "comparison chart of training providers"
@@ -80,7 +80,7 @@ const initialBlogPosts: BlogPost[] = [
     id: 'cpp-blog-4',
     title: "Recognition of Prior Learning (RPL) Guide",
     description: "How to leverage your existing experience to fast-track your CPP41419 qualification through RPL assessment.",
-    href: "https://cpp41419.com.au/blog/rpl-assessment-guide",
+    href: "https://www.cpp41419.com.au/blog/rpl-assessment-guide",
     category: "student-advice",
     imageUrl: "https://cpp41419.com.au/images/rpl-process.jpg",
     imageHint: "professional reviewing documents"
@@ -89,7 +89,7 @@ const initialBlogPosts: BlogPost[] = [
     id: 'cpp-blog-5',
     title: "Real Estate Career Pathways After CPP41419",
     description: "Explore diverse career opportunities in real estate, from sales agent to property management, commercial, and specialized roles.",
-    href: "https://cpp41419.com.au/blog/career-pathways-real-estate",
+    href: "https://www.cpp41419.com.au/blog/career-pathways-real-estate",
     category: "student-advice",
     imageUrl: "https://cpp41419.com.au/images/career-paths.jpg",
     imageHint: "real estate professionals at work"
@@ -98,7 +98,7 @@ const initialBlogPosts: BlogPost[] = [
     id: 'cpp-blog-6',
     title: "Online vs Face-to-Face Learning: What Works Best",
     description: "Comparing delivery methods for CPP41419 training, including pros and cons of online, classroom, and blended learning approaches.",
-    href: "https://cpp41419.com.au/blog/online-vs-classroom-learning",
+    href: "https://www.cpp41419.com.au/blog/online-vs-classroom-learning",
     category: "guides",
     imageUrl: "https://cpp41419.com.au/images/learning-methods.jpg",
     imageHint: "student using laptop and classroom setting"
@@ -107,7 +107,7 @@ const initialBlogPosts: BlogPost[] = [
     id: 'cpp-blog-7',
     title: "Understanding Course Costs and Payment Options",
     description: "Breakdown of CPP41419 fees across different providers, hidden costs to watch for, and available payment plans and funding options.",
-    href: "https://cpp41419.com.au/blog/course-costs-payment-options",
+    href: "https://www.cpp41419.com.au/blog/course-costs-payment-options",
     category: "guides",
     imageUrl: "https://cpp41419.com.au/images/costs-payment.jpg",
     imageHint: "calculator and financial documents"
@@ -116,7 +116,7 @@ const initialBlogPosts: BlogPost[] = [
     id: 'cpp-blog-8',
     title: "Common Mistakes When Starting Real Estate Training",
     description: "Learn from others' experiences - avoid these common pitfalls when choosing your CPP41419 provider and planning your study.",
-    href: "https://cpp41419.com.au/blog/common-training-mistakes",
+    href: "https://www.cpp41419.com.au/blog/common-training-mistakes",
     category: "student-advice",
     imageUrl: "https://cpp41419.com.au/images/avoid-mistakes.jpg",
     imageHint: "warning signs and checklist"
@@ -125,7 +125,7 @@ const initialBlogPosts: BlogPost[] = [
     id: 'cpp-blog-9',
     title: "Industry Updates: Changes Affecting Real Estate Agents",
     description: "Stay informed about recent regulatory changes, market trends, and industry developments impacting real estate professionals.",
-    href: "https://cpp41419.com.au/blog/industry-updates-changes",
+    href: "https://www.cpp41419.com.au/blog/industry-updates-changes",
     category: "licensing",
     imageUrl: "https://cpp41419.com.au/images/industry-news.jpg",
     imageHint: "newspaper and legal documents"
