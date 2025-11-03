@@ -22,14 +22,11 @@ export default function Footer() {
       ],
     },
     {
-      title: 'External Resources',
+      title: 'Resources',
       links: [
-        { name: 'Find Providers', href: 'https://cpp41419.com.au/providers' },
-        { name: 'Compare RTOs', href: 'https://cpp41419.com.au/compare' },
-        { name: 'About Us', href: 'https://cpp41419.com.au/about' },
-        { name: 'Contact', href: 'https://cpp41419.com.au/contact' },
-        { name: 'Privacy Policy', href: 'https://cpp41419.com.au/privacy' },
-        { name: 'Terms of Service', href: 'https://cpp41419.com.au/terms' },
+        { name: 'ASQA Provider Registry', href: 'https://regulator.asqa.gov.au' },
+        { name: 'Australian Aged Care Quality Standards', href: 'https://www.aacqa.gov.au/providers/aged-care-quality-standards' },
+        { name: 'National Disability Insurance Scheme', href: 'https://www.ndis.gov.au' },
       ],
     },
     {
@@ -50,7 +47,7 @@ export default function Footer() {
           <div>
             <AppLogo />
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-              Your independent guide to the CPP41419 Certificate IV in Real Estate Practice—across Australia.
+              Your independent guide to the CHC43015 Certificate IV in Ageing Support—across Australia.
             </p>
              <Button variant="outline" size="sm" className="w-full mt-6 rounded-full max-w-xs" asChild>
                 <a href="https://firebase.google.com/docs/app-hosting" target="_blank" rel="noopener noreferrer">
@@ -84,7 +81,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-border pt-8">
           <p className="text-center text-xs text-muted-foreground">
-            &copy; {currentYear} CPP41419 Q&A. All rights reserved. Information provided is general guidance only.
+            &copy; {currentYear} CHC43015 Q&A. All rights reserved. Information provided is general guidance only.
           </p>
         </div>
       </div>

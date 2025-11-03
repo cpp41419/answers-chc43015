@@ -24,27 +24,27 @@ const cleanAnswerText = (text: string): string => {
 export function ComprehensiveSchema({
   questions = [],
   pageType = 'homepage',
-  title = 'CPP41419 Q&A - Real Estate Training Guide',
-  description = 'Complete guide to CPP41419 Certificate IV in Real Estate Practice with answers, training providers, and licensing requirements.',
+  title = 'CHC43015 Q&A - Aged Care Training Guide',
+  description = 'Complete guide to CHC43015 Certificate IV in Ageing Support with answers, training providers, and career requirements.',
   breadcrumbs = [],
-  canonicalUrl = 'https://answers.cpp41419.com.au'
+  canonicalUrl = 'https://answers.chc43015.com'
 }: SchemaProps) {
   
   // Base Organization Schema
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://cpp41419.com.au/#organization",
-    "name": "CPP41419 Real Estate Training Platform",
-    "alternateName": "CPP41419",
-    "url": "https://cpp41419.com.au",
+    "@id": "https://answers.chc43015.com/#organization",
+    "name": "CHC43015 Aged Care Training Platform",
+    "alternateName": "CHC43015",
+    "url": "https://answers.chc43015.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://cpp41419.com.au/logo.png",
+      "url": "https://answers.chc43015.com/logo.png",
       "width": 300,
       "height": 100
     },
-    "description": "Australia's independent platform for CPP41419 Certificate IV in Real Estate Practice training, provider comparison, and career guidance.",
+    "description": "Australia's independent platform for CHC43015 Certificate IV in Ageing Support training, provider comparison, and career guidance.",
     "foundingDate": "2024",
     "areaServed": {
       "@type": "Country",
@@ -52,11 +52,11 @@ export function ComprehensiveSchema({
     },
     "serviceType": "Educational Services",
     "knowsAbout": [
-      "Real Estate Training",
-      "CPP41419 Certificate",
+      "Aged Care Training",
+      "CHC43015 Certificate",
       "RTO Comparison",
-      "Real Estate Licensing",
-      "Property Services Education"
+      "Aged Care Licensing",
+      "Aged Care Services Education"
     ]
   };
 
@@ -64,24 +64,23 @@ export function ComprehensiveSchema({
   const educationalProgramSchema = {
     "@context": "https://schema.org",
     "@type": "EducationalOccupationalProgram",
-    "@id": "https://cpp41419.com.au/#program",
-    "name": "CPP41419 Certificate IV in Property Services (Real Estate Practice)",
+    "@id": "https://answers.chc43015.com/#program",
+    "name": "CHC43015 Certificate IV in Ageing Support",
     "alternateName": [
-      "CPP41419",
-      "Certificate IV in Real Estate Practice",
-      "Real Estate Agent Course"
+      "CHC43015",
+      "Certificate IV in Ageing Support",
+      "Aged Care Worker Course"
     ],
-    "description": "Nationally recognized qualification required to become a licensed real estate agent in Australia, covering property sales, leasing, trust accounts, and compliance.",
+    "description": "Nationally recognized qualification for aged care workers in Australia, covering person-centered care, dignity, rights, health and safety, and aged care standards.",
     "provider": {
       "@type": "Organization",
-      "name": "Various RTOs across Australia",
-      "url": "https://cpp41419.com.au/providers"
+      "name": "Various RTOs across Australia"
     },
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "6221",
+      "codeValue": "4223",
       "codingSystem": "ANZSCO",
-      "name": "Real Estate Sales Agent"
+      "name": "Aged Care Worker"
     },
     "occupationalCredentialAwarded": {
       "@type": "EducationalOccupationalCredential",
@@ -92,8 +91,8 @@ export function ComprehensiveSchema({
         "url": "https://www.asqa.gov.au"
       }
     },
-    "timeToComplete": "P3M",
-    "typicalCreditsRequired": 11,
+    "timeToComplete": "P6M",
+    "typicalCreditsRequired": 12,
     "programType": "VocationalTraining",
     "educationalLevel": "Certificate IV",
     "applicationDeadline": "Open enrollment",
@@ -101,18 +100,18 @@ export function ComprehensiveSchema({
     "offers": {
       "@type": "Offer",
       "category": "Educational Course",
-      "priceRange": "$1500-$4000 AUD"
+      "priceRange": "$2000-$5000 AUD"
     },
     "hasCourse": [
       {
         "@type": "Course",
-        "name": "CPPDSM4007A - Identify legal and ethical requirements of property management to complete agency work",
-        "description": "Legal compliance and ethical practice in real estate"
+        "name": "CHCDFV001 - Work with people with dementia",
+        "description": "Dementia care and person-centered support"
       },
       {
-        "@type": "Course", 
-        "name": "CPPDSM4008A - Identify legal and ethical requirements to work with trust money",
-        "description": "Trust account management and compliance"
+        "@type": "Course",
+        "name": "CHCPAL001 - Provide palliative care",
+        "description": "Palliative care and end-of-life support"
       }
     ]
   };
@@ -128,24 +127,24 @@ export function ComprehensiveSchema({
     "inLanguage": "en-AU",
     "isPartOf": {
       "@type": "WebSite",
-      "@id": "https://answers.cpp41419.com.au/#website",
-      "name": "CPP41419 Answers",
-      "url": "https://answers.cpp41419.com.au",
+      "@id": "https://answers.chc43015.com/#website",
+      "name": "CHC43015 Answers",
+      "url": "https://answers.chc43015.com",
       "publisher": {
-        "@id": "https://cpp41419.com.au/#organization"
+        "@id": "https://answers.chc43015.com/#organization"
       }
     },
     "about": {
-      "@id": "https://cpp41419.com.au/#program"
+      "@id": "https://answers.chc43015.com/#program"
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://answers.cpp41419.com.au/og-image.jpg"
+      "url": "https://answers.chc43015.com/og-image.jpg"
     },
     "datePublished": "2024-01-01",
     "dateModified": new Date().toISOString().split('T')[0],
     "author": {
-      "@id": "https://cpp41419.com.au/#organization"
+      "@id": "https://answers.chc43015.com/#organization"
     }
   };
 
@@ -175,52 +174,41 @@ export function ComprehensiveSchema({
           "text": cleanAnswerText(q.answer),
           "dateCreated": q.last_updated,
           "author": {
-            "@id": "https://cpp41419.com.au/#organization"
+            "@id": "https://answers.chc43015.com/#organization"
           }
         }
       })),
       // Add high-value SEO questions
       {
         "@type": "Question",
-        "name": "How long does CPP41419 take to complete?",
+        "name": "How long does CHC43015 take to complete?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "CPP41419 typically takes 3-6 months to complete, depending on study mode. Full-time students can finish in 3 months, while part-time study usually takes 4-6 months. Online courses offer flexible pacing.",
+          "text": "CHC43015 typically takes 6-12 months to complete, depending on study mode. Full-time students can finish in 6-9 months, while part-time study usually takes 9-12 months. Online courses offer flexible pacing.",
           "author": {
-            "@id": "https://cpp41419.com.au/#organization"
-          }
-        }
-      },
-      {
-        "@type": "Question", 
-        "name": "Can I get CPP41419 answers and study materials for free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "While some general information is available online, official CPP41419 study materials and assessment answers must be obtained through registered training organizations (RTOs). Free resources include government unit outlines and sample questions.",
-          "author": {
-            "@id": "https://cpp41419.com.au/#organization"
+            "@id": "https://answers.chc43015.com/#organization"
           }
         }
       },
       {
         "@type": "Question",
-        "name": "What jobs can I get with CPP41419 certificate?",
+        "name": "What jobs can I get with CHC43015 certificate?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "CPP41419 qualifies you for roles including Real Estate Sales Agent, Property Manager, Leasing Consultant, Real Estate Assistant, Buyers Agent, and Commercial Property Specialist. Average salary ranges from $45,000-$80,000+ depending on experience and location.",
+          "text": "CHC43015 qualifies you for roles including Aged Care Worker, Residential Care Worker, Community Support Worker, Disability Support Worker, and Aged Care Coordinator. Average salary ranges from $48,000-$65,000+ depending on experience and location.",
           "author": {
-            "@id": "https://cpp41419.com.au/#organization"
+            "@id": "https://answers.chc43015.com/#organization"
           }
         }
       },
       {
         "@type": "Question",
-        "name": "How much does CPP41419 course cost in Australia?",
+        "name": "How much does CHC43015 course cost in Australia?",
         "acceptedAnswer": {
-          "@type": "Answer", 
-          "text": "CPP41419 course fees range from $1,500 to $4,000 across different RTOs. Factors affecting cost include delivery method (online vs face-to-face), support level, and included materials. Government funding may be available for eligible students.",
+          "@type": "Answer",
+          "text": "CHC43015 course fees range from $2,000 to $5,000 across different RTOs. Factors affecting cost include delivery method (online vs face-to-face), support level, and included materials. Government funding may be available for eligible students.",
           "author": {
-            "@id": "https://cpp41419.com.au/#organization"
+            "@id": "https://answers.chc43015.com/#organization"
           }
         }
       }

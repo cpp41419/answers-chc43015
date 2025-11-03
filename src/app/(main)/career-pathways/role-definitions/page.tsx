@@ -107,7 +107,7 @@ export default function RoleDefinitionsPage() {
               </div>
 
               <SpecialBlock type="note">
-                <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-is-an-agents-representative-in-victoria-and-what-can-they-do" 
+                <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/what-is-an-agents-representative-in-victoria-and-what-can-they-do" 
                       className="text-primary hover:underline font-medium">
                   Learn more about Agent's Representative roles and permissions →
                 </Link>
@@ -137,7 +137,7 @@ export default function RoleDefinitionsPage() {
                   </ul>
                   <p className="text-sm text-muted-foreground mt-2">
                     <strong>CPD:</strong> 12 hours annually | 
-                    <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-are-the-annual-cpd-requirements-for-a-class-1-agent-in-nsw" 
+                    <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/what-are-the-annual-cpd-requirements-for-a-class-1-agent-in-nsw" 
                           className="text-primary hover:underline ml-1">
                       Details →
                     </Link>
@@ -157,7 +157,7 @@ export default function RoleDefinitionsPage() {
                   </ul>
                   <p className="text-sm text-muted-foreground mt-2">
                     <strong>CPD:</strong> 12 hours annually | 
-                    <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-are-the-specific-cpd-requirements-for-a-class-2-agent-in-nsw" 
+                    <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/what-are-the-specific-cpd-requirements-for-a-class-2-agent-in-nsw" 
                           className="text-primary hover:underline ml-1">
                       Details →
                     </Link>
@@ -166,7 +166,7 @@ export default function RoleDefinitionsPage() {
               </div>
 
               <SpecialBlock type="tip">
-                <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/how-do-i-upgrade-from-an-assistant-agent-to-a-class-2-agent-in-nsw" 
+                <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/how-do-i-upgrade-from-an-assistant-agent-to-a-class-2-agent-in-nsw" 
                       className="text-primary hover:underline font-medium">
                   Learn how to upgrade from Assistant Agent to Class 2 →
                 </Link>
@@ -217,14 +217,14 @@ export default function RoleDefinitionsPage() {
                   In Queensland, agents must understand Form 6 appointment processes for property management. 
                   This is a unique QLD requirement that affects role responsibilities.
                   <br/><br/>
-                  <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-is-a-form-6-appointment-in-queensland" 
+                  <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/what-is-a-form-6-appointment-in-queensland" 
                         className="text-primary hover:underline font-medium">
                     Learn about Form 6 appointments →
                   </Link>
                 </SpecialBlock>
 
                 <SpecialBlock type="note">
-                  <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/whats-the-difference-between-a-registration-certificate-and-a-full-licence-in-qld" 
+                  <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/whats-the-difference-between-a-registration-certificate-and-a-full-licence-in-qld" 
                         className="text-primary hover:underline font-medium">
                     Detailed comparison: Registration vs Full License in QLD →
                   </Link>
@@ -310,7 +310,7 @@ export default function RoleDefinitionsPage() {
             <div className="mt-4 text-sm text-muted-foreground space-y-1">
               <p>* Under supervision or with appropriate approval</p>
               <p>** Special case: 
-                <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/can-i-conduct-an-auction-as-an-agents-representative-in-vic" 
+                <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/can-i-conduct-an-auction-as-an-agents-representative-in-vic" 
                       className="text-primary hover:underline ml-1">
                   Can Agent's Representatives conduct auctions in Victoria? →
                 </Link>

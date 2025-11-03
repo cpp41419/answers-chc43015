@@ -185,7 +185,7 @@ export default function QuizClientPage() {
                   </div>
                 </div>
                 <Button variant="link" asChild>
-                  <a href="https://cpp41419.com.au/compare" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cpp41419.com/compare" target="_blank" rel="noopener noreferrer">
                     Compare RTOs
                     <ChevronRight className="w-4 h-4 ml-1" />
                   </a>
@@ -278,7 +278,7 @@ export default function QuizClientPage() {
                   Start New Search
                 </Button>
                 <Button variant="link" asChild>
-                  <a href="https://cpp41419.com.au/providers" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cpp41419.com/providers" target="_blank" rel="noopener noreferrer">
                     View All Providers
                     <ChevronRight className="w-4 h-4 ml-1" />
                   </a>
@@ -356,7 +356,7 @@ export default function QuizClientPage() {
                           </a>
                        </Button>
                        <Button size="lg" variant="outline" asChild>
-                          <a href="https://cpp41419.com.au/CPP41419-UPDATED-2-25-COURSE-GUIDE.pdf" target="_blank" rel="noopener noreferrer">
+                          <a href="https://cpp41419.com/CPP41419-UPDATED-2-25-COURSE-GUIDE.pdf" target="_blank" rel="noopener noreferrer">
                             Download Course Guide
                           </a>
                        </Button>

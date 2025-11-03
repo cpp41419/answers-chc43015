@@ -9,9 +9,9 @@ import MermaidDiagram from '@/components/core/MermaidDiagram'; // Import the new
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'CPP41419 Certificate IV - Complete Australian Guide | CPP41419 Q&A',
-  description: 'A comprehensive guide to the CPP41419 Certificate IV in Real Estate Practice across Australia, covering course history, state licensing, costs, providers, and career pathways.',
-  keywords: ['CPP41419 complete guide', 'Certificate IV in Real Estate Practice', 'real estate course Australia', 'how to become a real estate agent', 'NSW real estate license', 'VIC agent representative', 'QLD real estate registration', 'RTO course comparison', 'real estate career pathways', 'real estate salary Australia'],
+  title: 'CHC43015 Certificate IV - Complete Australian Guide | CHC43015 Q&A',
+  description: 'A comprehensive guide to the CHC43015 Certificate IV in Ageing Support across Australia, covering course history, aged care requirements, costs, providers, and career pathways.',
+  keywords: ['CHC43015 complete guide', 'Certificate IV in Ageing Support', 'aged care course Australia', 'how to become an aged care worker', 'aged care qualification Australia', 'RTO course comparison', 'aged care career pathways', 'aged care salary Australia'],
 };
 
 interface SpecialBlockProps {
@@ -84,10 +84,10 @@ export default function ComprehensiveGuidePage() {
       
       <header className="pb-6 border-b">
         <h1 className="text-4xl font-bold tracking-tight text-foreground">
-          CPP41419 Certificate IV in Real Estate Practice - Complete Australian Guide
+          CHC43015 Certificate IV in Ageing Support - Complete Australian Guide
         </h1>
         <p className="mt-3 text-lg text-muted-foreground">
-          Welcome to the most comprehensive resource for understanding the CPP41419 Certificate IV in Real Estate Practice across Australia.
+          Welcome to the most comprehensive resource for understanding the CHC43015 Certificate IV in Ageing Support across Australia.
         </p>
       </header>
 
@@ -97,7 +97,7 @@ export default function ComprehensiveGuidePage() {
         </CardHeader>
         <CardContent className="space-y-4 prose max-w-none dark:prose-invert">
           <SpecialBlock type="abstract" title="Navigation Hub">
-            This comprehensive guide covers everything you need to know about CPP41419 across Australia. Use the sections below to jump to specific topics:
+            This comprehensive guide covers everything you need to know about CHC43015 across Australia. Use the sections below to jump to specific topics:
             <ul className="list-disc pl-5 mt-2">
               <li><Link href="#course-history" className="text-primary hover:underline">Course History</Link></li>
               <li><Link href="#course-overview" className="text-primary hover:underline">Course Overview</Link></li>
@@ -113,7 +113,7 @@ export default function ComprehensiveGuidePage() {
           </SpecialBlock>
           <p>Whether you're considering a career change, just finishing school, or looking to upgrade your qualifications, this guide provides everything you need to make informed decisions about your real estate education journey.</p>
           <SpecialBlock type="info" title="Source Authority">
-            All information in this guide has been verified against current regulatory requirements and industry standards. For the most up-to-date provider comparisons and licensing information, visit <Link href="https://cpp41419.com.au" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au</Link>.
+            All information in this guide has been verified against current regulatory requirements and industry standards. For the most up-to-date provider comparisons and licensing information, visit <Link href="https://cpp41419.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com</Link>.
           </SpecialBlock>
         </CardContent>
       </Card>
@@ -177,10 +177,10 @@ timeline
           <h3>Why the Change?</h3>
           <SpecialBlock type="check" title="Industry Modernization Drivers">
             <ul className="list-disc pl-5">
-              <li><strong>Technology Integration</strong>: Modern real estate requires digital literacy for CRM systems, online marketing, and virtual inspections. (Source: <Link href="https://cpp41419.com.au/digital-skills" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/digital-skills</Link>)</li>
-              <li><strong>Consumer Protection</strong>: Enhanced focus on ethical practice and transparent communication. (Source: <Link href="https://cpp41419.com.au/consumer-protection" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/consumer-protection</Link>)</li>
-              <li><strong>Regulatory Compliance</strong>: Strengthened understanding of evolving state and federal regulations. (Source: <Link href="https://cpp41419.com.au/compliance" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/compliance</Link>)</li>
-              <li><strong>Professional Standards</strong>: Higher expectations for continuing professional development. (Source: <Link href="https://cpp41419.com.au/cpd-requirements" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/cpd-requirements</Link>)</li>
+              <li><strong>Technology Integration</strong>: Modern real estate requires digital literacy for CRM systems, online marketing, and virtual inspections. (Source: <Link href="https://cpp41419.com/digital-skills" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/digital-skills</Link>)</li>
+              <li><strong>Consumer Protection</strong>: Enhanced focus on ethical practice and transparent communication. (Source: <Link href="https://cpp41419.com/consumer-protection" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/consumer-protection</Link>)</li>
+              <li><strong>Regulatory Compliance</strong>: Strengthened understanding of evolving state and federal regulations. (Source: <Link href="https://cpp41419.com/compliance" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/compliance</Link>)</li>
+              <li><strong>Professional Standards</strong>: Higher expectations for continuing professional development. (Source: <Link href="https://cpp41419.com/cpd-requirements" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/cpd-requirements</Link>)</li>
             </ul>
           </SpecialBlock>
         </CardContent>
@@ -190,7 +190,7 @@ timeline
         <CardHeader><CardTitle className="text-2xl font-semibold flex items-center"><BookOpen className="mr-2 h-6 w-6 text-primary" /> Course Overview</CardTitle></CardHeader>
         <CardContent className="space-y-4 prose max-w-none dark:prose-invert">
           <SpecialBlock type="info" title="National Recognition">
-            CPP41419 is recognized across all Australian states and territories, though each jurisdiction has specific licensing requirements and processes. (Source: <Link href="https://cpp41419.com.au/national-recognition" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/national-recognition</Link>)
+            CPP41419 is recognized across all Australian states and territories, though each jurisdiction has specific licensing requirements and processes. (Source: <Link href="https://cpp41419.com/national-recognition" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/national-recognition</Link>)
           </SpecialBlock>
           <SpecialBlock type="example" title="Quick Course Facts">
              <ul className="list-disc pl-5">
@@ -201,7 +201,7 @@ timeline
             </ul>
           </SpecialBlock>
           <h3>What is CPP41419?</h3>
-          <p>The Certificate IV in Real Estate Practice is Australia's mandatory qualification for anyone seeking to work as a licensed real estate agent. (Source: <Link href="https://cpp41419.com.au/what-is-cpp41419" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/what-is-cpp41419</Link>) This nationally accredited course covers essential skills in:</p>
+          <p>The Certificate IV in Real Estate Practice is Australia's mandatory qualification for anyone seeking to work as a licensed real estate agent. (Source: <Link href="https://cpp41419.com/what-is-cpp41419" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/what-is-cpp41419</Link>) This nationally accredited course covers essential skills in:</p>
           <SpecialBlock type="abstract" title="Core Learning Areas">
             <pre className="text-sm p-2 bg-muted/50 rounded"><code>
 ┌─ Property Sales and Marketing
@@ -229,7 +229,7 @@ timeline
 
           <h3>Course Structure</h3>
           <SpecialBlock type="note" title="Unit Breakdown">
-             <strong>Total Units</strong>: 18 (5 Core + 13 Electives) (Source: <Link href="https://cpp41419.com.au/course-structure" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/course-structure</Link>)<br/>
+             <strong>Total Units</strong>: 18 (5 Core + 13 Electives) (Source: <Link href="https://cpp41419.com/course-structure" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/course-structure</Link>)<br/>
              <strong>Duration</strong>: 3-8 months (varies by provider and study mode)<br/>
              <strong>Delivery</strong>: Online, classroom, or blended learning options<br/>
              <strong>Assessment</strong>: Project-based assignments (no exams)
@@ -351,7 +351,7 @@ graph LR
                   <li><strong>REINSW:</strong> The peak industry body, offering credible training with strong networking opportunities.</li>
                   <li><strong>Kaplan Professional:</strong> A popular online choice with flexible learning for busy professionals.</li>
               </ul>
-               <Link href="https://cpp41419.com.au/compare/nsw" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline block mt-2">Compare more NSW Providers</Link>
+               <Link href="https://cpp41419.com/compare/nsw" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline block mt-2">Compare more NSW Providers</Link>
             </SpecialBlock>
           </div>
 
@@ -386,7 +386,7 @@ graph LR
                 <li><strong>Entry Education:</strong> Well-regarded for their strong student support and online platform.</li>
                 <li><strong>Victoria University Polytechnic:</strong> A TAFE option providing structured, government-backed training.</li>
               </ul>
-              <Link href="https://cpp41419.com.au/compare/vic" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline block mt-2">Compare more VIC Providers</Link>
+              <Link href="https://cpp41419.com/compare/vic" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline block mt-2">Compare more VIC Providers</Link>
             </SpecialBlock>
           </div>
 
@@ -421,7 +421,7 @@ graph LR
                 <li><strong>Validum Institute:</strong> A popular choice for their flexible online courses tailored to the QLD market.</li>
                 <li><strong>TAFE Queensland:</strong> Offers government-subsidised places and structured classroom environments.</li>
               </ul>
-              <Link href="https://cpp41419.com.au/compare/qld" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline block mt-2">Compare more QLD Providers</Link>
+              <Link href="https://cpp41419.com/compare/qld" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline block mt-2">Compare more QLD Providers</Link>
             </SpecialBlock>
           </div>
           {/* Other states can be added here with similar structure */}
@@ -707,42 +707,42 @@ graph LR
         <CardContent className="space-y-4 prose max-w-none dark:prose-invert">
             <SpecialBlock type="abstract" title="Related Resources">
                 <ul className="list-disc pl-5">
-                    <li><Link href="https://cpp41419.com.au/nsw" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">NSW CPP41419 Guide</Link> - Detailed NSW licensing pathway</li>
-                    <li><Link href="https://cpp41419.com.au/vic" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">VIC CPP41419 Guide</Link> - Victoria-specific requirements</li>
-                    <li><Link href="https://cpp41419.com.au/qld" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">QLD CPP41419 Guide</Link> - Queensland registration process</li>
-                    <li><Link href="https://cpp41419.com.au/compare" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Provider Comparison Tool</Link> - Interactive provider selector</li>
-                    <li><Link href="https://cpp41419.com.au/calculator" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Cost Calculator</Link> - Estimate your total education investment</li>
-                    <li><Link href="https://www.cpp41419.com.au/logup" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Partner Login/Signup</Link> - Access provider resources and dashboards</li>
+                    <li><Link href="https://cpp41419.com/nsw" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">NSW CPP41419 Guide</Link> - Detailed NSW licensing pathway</li>
+                    <li><Link href="https://cpp41419.com/vic" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">VIC CPP41419 Guide</Link> - Victoria-specific requirements</li>
+                    <li><Link href="https://cpp41419.com/qld" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">QLD CPP41419 Guide</Link> - Queensland registration process</li>
+                    <li><Link href="https://cpp41419.com/compare" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Provider Comparison Tool</Link> - Interactive provider selector</li>
+                    <li><Link href="https://cpp41419.com/calculator" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Cost Calculator</Link> - Estimate your total education investment</li>
+                    <li><Link href="https://www.cpp41419.com/logup" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Partner Login/Signup</Link> - Access provider resources and dashboards</li>
                 </ul>
             </SpecialBlock>
             <h3>Citations & Sources</h3>
-            <p>All information in this guide has been sourced from cpp41419.com.au and verified against current regulatory requirements:</p>
+            <p>All information in this guide has been sourced from cpp41419.com and verified against current regulatory requirements:</p>
             <ol className="list-decimal pl-5 space-y-1">
-              <li><strong>Digital Skills in Modern Real Estate:</strong> <Link href="https://cpp41419.com.au/digital-skills" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/digital-skills</Link></li>
-              <li><strong>Consumer Protection in Real Estate Education:</strong> <Link href="https://cpp41419.com.au/consumer-protection" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/consumer-protection</Link></li>
-              <li><strong>Regulatory Compliance Overview:</strong> <Link href="https://cpp41419.com.au/compliance" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/compliance</Link></li>
-              <li><strong>Professional Development Requirements:</strong> <Link href="https://cpp41419.com.au/cpd-requirements" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/cpd-requirements</Link></li>
-              <li><strong>National Recognition Framework:</strong> <Link href="https://cpp41419.com.au/national-recognition" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/national-recognition</Link></li>
-              <li><strong>What is CPP41419?:</strong> <Link href="https://cpp41419.com.au/what-is-cpp41419" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/what-is-cpp41419</Link></li>
-              <li><strong>CPP41419 Units and Structure:</strong> <Link href="https://cpp41419.com.au/course-structure" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/course-structure</Link></li>
-              <li><strong>NSW Licensing Pathway:</strong> <Link href="https://cpp41419.com.au/nsw" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/nsw</Link></li>
-              <li><strong>Victoria Agent's Representative Guide:</strong> <Link href="https://cpp41419.com.au/vic" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/vic</Link></li>
-              <li><strong>Queensland Registration Process:</strong> <Link href="https://cpp41419.com.au/qld" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/qld</Link></li>
-              <li><strong>Western Australia Triennial System:</strong> <Link href="https://cpp41419.com.au/wa" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/wa</Link></li>
-              <li><strong>South Australia Trust Account Regulations:</strong> <Link href="https://cpp41419.com.au/sa" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/sa</Link></li>
-              <li><strong>Tasmania Property Agent Registration:</strong> <Link href="https://cpp41419.com.au/tas" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/tas</Link></li>
-              <li><strong>ACT Leasehold System Guide:</strong> <Link href="https://cpp41419.com.au/act" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/act</Link></li>
-              <li><strong>Northern Territory Remote Area Practice:</strong> <Link href="https://cpp41419.com.au/nt" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/nt</Link></li>
+              <li><strong>Digital Skills in Modern Real Estate:</strong> <Link href="https://cpp41419.com/digital-skills" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/digital-skills</Link></li>
+              <li><strong>Consumer Protection in Real Estate Education:</strong> <Link href="https://cpp41419.com/consumer-protection" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/consumer-protection</Link></li>
+              <li><strong>Regulatory Compliance Overview:</strong> <Link href="https://cpp41419.com/compliance" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/compliance</Link></li>
+              <li><strong>Professional Development Requirements:</strong> <Link href="https://cpp41419.com/cpd-requirements" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/cpd-requirements</Link></li>
+              <li><strong>National Recognition Framework:</strong> <Link href="https://cpp41419.com/national-recognition" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/national-recognition</Link></li>
+              <li><strong>What is CPP41419?:</strong> <Link href="https://cpp41419.com/what-is-cpp41419" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/what-is-cpp41419</Link></li>
+              <li><strong>CPP41419 Units and Structure:</strong> <Link href="https://cpp41419.com/course-structure" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/course-structure</Link></li>
+              <li><strong>NSW Licensing Pathway:</strong> <Link href="https://cpp41419.com/nsw" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/nsw</Link></li>
+              <li><strong>Victoria Agent's Representative Guide:</strong> <Link href="https://cpp41419.com/vic" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/vic</Link></li>
+              <li><strong>Queensland Registration Process:</strong> <Link href="https://cpp41419.com/qld" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/qld</Link></li>
+              <li><strong>Western Australia Triennial System:</strong> <Link href="https://cpp41419.com/wa" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/wa</Link></li>
+              <li><strong>South Australia Trust Account Regulations:</strong> <Link href="https://cpp41419.com/sa" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/sa</Link></li>
+              <li><strong>Tasmania Property Agent Registration:</strong> <Link href="https://cpp41419.com/tas" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/tas</Link></li>
+              <li><strong>ACT Leasehold System Guide:</strong> <Link href="https://cpp41419.com/act" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/act</Link></li>
+              <li><strong>Northern Territory Remote Area Practice:</strong> <Link href="https://cpp41419.com/nt" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/nt</Link></li>
             </ol>
             <h4 className="mt-4">Additional Resources:</h4>
             <ul className="list-disc pl-5 space-y-1">
-                <li><strong>Provider Database:</strong> <Link href="https://cpp41419.com.au/providers" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/providers</Link></li>
-                <li><strong>Cost Analysis Tool:</strong> <Link href="https://cpp41419.com.au/costs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/costs</Link></li>
-                <li><strong>Career Pathways Guide:</strong> <Link href="https://cpp41419.com.au/careers" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/careers</Link></li>
-                <li><strong>FAQ Database:</strong> <Link href="https://cpp41419.com.au/faq" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/faq</Link></li>
-                <li><strong>Industry Updates:</strong> <Link href="https://cpp41419.com.au/news" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au/news</Link></li>
+                <li><strong>Provider Database:</strong> <Link href="https://cpp41419.com/providers" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/providers</Link></li>
+                <li><strong>Cost Analysis Tool:</strong> <Link href="https://cpp41419.com/costs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/costs</Link></li>
+                <li><strong>Career Pathways Guide:</strong> <Link href="https://cpp41419.com/careers" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/careers</Link></li>
+                <li><strong>FAQ Database:</strong> <Link href="https://cpp41419.com/faq" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/faq</Link></li>
+                <li><strong>Industry Updates:</strong> <Link href="https://cpp41419.com/news" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com/news</Link></li>
             </ul>
-            <p className="mt-4 text-sm text-muted-foreground"><em>This guide represents the most current information available as of May 2025. Licensing requirements and provider details may change. Always verify specific requirements with your state licensing authority before enrollment. For real-time updates and the latest provider information, visit <Link href="https://cpp41419.com.au" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com.au</Link>.</em></p>
+            <p className="mt-4 text-sm text-muted-foreground"><em>This guide represents the most current information available as of May 2025. Licensing requirements and provider details may change. Always verify specific requirements with your state licensing authority before enrollment. For real-time updates and the latest provider information, visit <Link href="https://cpp41419.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cpp41419.com</Link>.</em></p>
         </CardContent>
       </Card>
 

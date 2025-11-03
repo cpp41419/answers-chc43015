@@ -104,7 +104,7 @@ export default function CPDRequirementsPage() {
                     </td>
                     <td className="py-3 px-4 text-sm">Consumer protection, legislation updates</td>
                     <td className="py-3 px-4">
-                      <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-are-the-annual-cpd-requirements-for-a-class-1-agent-in-nsw" 
+                      <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/what-are-the-annual-cpd-requirements-for-a-class-1-agent-in-nsw" 
                             className="text-primary hover:underline text-sm">
                         Class 1 Details
                       </Link>
@@ -324,11 +324,11 @@ export default function CPDRequirementsPage() {
                   <h4 className="font-semibold mb-2">NSW CPD Requirements</h4>
                   <p className="text-sm text-muted-foreground mb-3">Class 1 and Class 2 agent obligations</p>
                   <div className="space-y-2">
-                    <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-are-the-annual-cpd-requirements-for-a-class-1-agent-in-nsw" 
+                    <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/what-are-the-annual-cpd-requirements-for-a-class-1-agent-in-nsw" 
                           className="block text-primary hover:underline text-sm">
                       → Class 1 Agent CPD Details
                     </Link>
-                    <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-are-the-specific-cpd-requirements-for-a-class-2-agent-in-nsw" 
+                    <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/what-are-the-specific-cpd-requirements-for-a-class-2-agent-in-nsw" 
                           className="block text-primary hover:underline text-sm">
                       → Class 2 Agent CPD Details
                     </Link>

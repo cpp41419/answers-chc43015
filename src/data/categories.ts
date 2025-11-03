@@ -10,7 +10,7 @@ interface CategoryDefinition {
 const categoryDefinitions: CategoryDefinition[] = [
   {
     name: "Course Basics & Enrollment",
-    description: "Get answers about enrolling and understanding the fundamentals of the CPP41419 qualification."
+    description: "Get answers about enrolling and understanding the fundamentals of the CHC43015 qualification."
   },
   {
     name: "Study Options & Duration",
@@ -30,7 +30,7 @@ const categoryDefinitions: CategoryDefinition[] = [
   },
   {
     name: "Career & Employment",
-    description: "Explore where this course leads—jobs, salaries, growth paths, and real estate specialties."
+    description: "Explore where this course leads—jobs, salaries, growth paths, and aged care specialties."
   },
   {
     name: "Provider Selection",

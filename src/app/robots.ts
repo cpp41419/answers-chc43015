@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         '/private/',
       ],
     },
-    sitemap: 'https://answers.cpp41419.com.au/sitemap.xml',
+    sitemap: 'https://answers.chc43015.com/sitemap.xml',
   };
 }

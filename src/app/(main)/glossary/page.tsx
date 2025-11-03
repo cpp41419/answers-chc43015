@@ -28,8 +28,8 @@ const glossaryTerms: GlossaryTerm[] = [
     states: ['VIC'],
     category: 'roles',
     relatedLinks: [
-      { text: "What can an Agent's Representative do?", href: "https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-is-an-agents-representative-in-victoria-and-what-can-they-do" },
-      { text: "Can Agent's Reps conduct auctions?", href: "https://answers.cpp41419.com.au/questions/state-licensing-requirements/can-i-conduct-an-auction-as-an-agents-representative-in-vic" }
+      { text: "What can an Agent's Representative do?", href: "https://answers.cpp41419.com/questions/state-licensing-requirements/what-is-an-agents-representative-in-victoria-and-what-can-they-do" },
+      { text: "Can Agent's Reps conduct auctions?", href: "https://answers.cpp41419.com/questions/state-licensing-requirements/can-i-conduct-an-auction-as-an-agents-representative-in-vic" }
     ]
   },
   {
@@ -54,7 +54,7 @@ const glossaryTerms: GlossaryTerm[] = [
     states: ['NSW'],
     category: 'roles',
     relatedLinks: [
-      { text: "Class 1 Agent CPD Requirements", href: "https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-are-the-annual-cpd-requirements-for-a-class-1-agent-in-nsw" }
+      { text: "Class 1 Agent CPD Requirements", href: "https://answers.cpp41419.com/questions/state-licensing-requirements/what-are-the-annual-cpd-requirements-for-a-class-1-agent-in-nsw" }
     ]
   },
   {
@@ -63,8 +63,8 @@ const glossaryTerms: GlossaryTerm[] = [
     states: ['NSW'],
     category: 'roles',
     relatedLinks: [
-      { text: "Class 2 Agent CPD Requirements", href: "https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-are-the-specific-cpd-requirements-for-a-class-2-agent-in-nsw" },
-      { text: "How to upgrade from Assistant Agent to Class 2", href: "https://answers.cpp41419.com.au/questions/state-licensing-requirements/how-do-i-upgrade-from-an-assistant-agent-to-a-class-2-agent-in-nsw" }
+      { text: "Class 2 Agent CPD Requirements", href: "https://answers.cpp41419.com/questions/state-licensing-requirements/what-are-the-specific-cpd-requirements-for-a-class-2-agent-in-nsw" },
+      { text: "How to upgrade from Assistant Agent to Class 2", href: "https://answers.cpp41419.com/questions/state-licensing-requirements/how-do-i-upgrade-from-an-assistant-agent-to-a-class-2-agent-in-nsw" }
     ]
   },
   {
@@ -100,7 +100,7 @@ const glossaryTerms: GlossaryTerm[] = [
     states: ['QLD'],
     category: 'processes',
     relatedLinks: [
-      { text: "What is a Form 6 Appointment?", href: "https://answers.cpp41419.com.au/questions/state-licensing-requirements/what-is-a-form-6-appointment-in-queensland" }
+      { text: "What is a Form 6 Appointment?", href: "https://answers.cpp41419.com/questions/state-licensing-requirements/what-is-a-form-6-appointment-in-queensland" }
     ]
   },
   {
@@ -116,7 +116,7 @@ const glossaryTerms: GlossaryTerm[] = [
     states: ['All'],
     category: 'processes',
     relatedLinks: [
-      { text: "How to disclose material facts in NSW", href: "https://answers.cpp41419.com.au/questions/state-licensing-requirements/how-do-i-disclose-material-facts-about-a-property-in-nsw" }
+      { text: "How to disclose material facts in NSW", href: "https://answers.cpp41419.com/questions/state-licensing-requirements/how-do-i-disclose-material-facts-about-a-property-in-nsw" }
     ]
   },
   {
@@ -139,8 +139,8 @@ const glossaryTerms: GlossaryTerm[] = [
     states: ['QLD', 'SA'],
     category: 'licensing',
     relatedLinks: [
-      { text: "Registration vs Full License in QLD", href: "https://answers.cpp41419.com.au/questions/state-licensing-requirements/whats-the-difference-between-a-registration-certificate-and-a-full-licence-in-qld" },
-      { text: "Can I work in both sales and property management with registration in SA?", href: "https://answers.cpp41419.com.au/questions/state-licensing-requirements/can-i-work-in-both-sales-and-property-management-with-the-initial-registration-in-sa" }
+      { text: "Registration vs Full License in QLD", href: "https://answers.cpp41419.com/questions/state-licensing-requirements/whats-the-difference-between-a-registration-certificate-and-a-full-licence-in-qld" },
+      { text: "Can I work in both sales and property management with registration in SA?", href: "https://answers.cpp41419.com/questions/state-licensing-requirements/can-i-work-in-both-sales-and-property-management-with-the-initial-registration-in-sa" }
     ],
     synonyms: ['Registration', 'Agent Registration']
   },

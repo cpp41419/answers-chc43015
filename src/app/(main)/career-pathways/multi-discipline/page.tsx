@@ -217,7 +217,7 @@ export default function MultiDisciplineCareersPage() {
                     <td className="py-3 px-4">Single license covers both disciplines</td>
                     <td className="py-3 px-4 text-sm">Excellent dual-role opportunities</td>
                     <td className="py-3 px-4">
-                      <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/can-i-work-in-both-sales-and-property-management-with-the-initial-registration-in-sa" 
+                      <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/can-i-work-in-both-sales-and-property-management-with-the-initial-registration-in-sa" 
                             className="text-primary hover:underline text-sm">
                         SA Details
                       </Link>

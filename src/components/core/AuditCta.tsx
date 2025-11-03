@@ -24,7 +24,7 @@ export function AuditCta() {
             </div>
             <div className="flex-shrink-0 mt-6 md:mt-0">
               <Button asChild size="lg" className="bg-accent text-accent-foreground font-bold hover:bg-accent/90 w-full md:w-auto">
-                <a href="https://online.cpp41419.com.au/" target="_blank" rel="noopener noreferrer">
+                <a href="https://online.cpp41419.com/" target="_blank" rel="noopener noreferrer">
                   Request Free Audit
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>

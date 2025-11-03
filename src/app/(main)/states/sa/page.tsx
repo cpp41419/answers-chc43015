@@ -182,7 +182,7 @@ export default function SouthAustraliaLicensingPage() {
               The CPP41419 qualification covers both areas, and CBS allows agents to operate in multiple disciplines 
               under a single license. This provides career flexibility and increased income opportunities.
               <br/><br/>
-              <Link href="https://answers.cpp41419.com.au/questions/state-licensing-requirements/can-i-work-in-both-sales-and-property-management-with-the-initial-registration-in-sa" 
+              <Link href="https://answers.cpp41419.com/questions/state-licensing-requirements/can-i-work-in-both-sales-and-property-management-with-the-initial-registration-in-sa" 
                     className="text-primary hover:underline font-medium">
                 Learn more about dual-role permissions in SA →
               </Link>
@@ -365,7 +365,7 @@ export default function SouthAustraliaLicensingPage() {
                 <h4 className="font-semibold mb-3">Professional Development</h4>
                 <ul className="space-y-2">
                   <li>
-                    <a href="https://www.reisa.com.au/" 
+                    <a href="https://www.reisa.com/" 
                        target="_blank" 
                        rel="noopener noreferrer"
                        className="text-primary hover:underline">
